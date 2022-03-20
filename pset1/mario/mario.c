@@ -1,32 +1,43 @@
 #include <stdio.h>
 #include <cs50.h>
 
-int print_space(int n);
+void space(int n);
+void block(int n);
 
 int main(void)
 {
+    int n;
 
-    print_space(3);
+    do
 
-/*
-    int l = 8;
-    int m = 2;
-//    for (int i = 0; i < l; i++)
-//    {
-        for (int j = 0; j < m; j++)
-        {
+    while
 
-            printf("#");
-        }
-//        m++;
-            printf("\n");
-//    } */
+
+    int qtd_space = n - 1;
+    int qtd_block = 1;
+
+    for(int i = 0; i < n; i++)
+    {
+        space(qtd_space);
+        block(qtd_block);
+        qtd_space--;
+        qtd_block++;
+        printf("\n");
+    }
 }
 
-void print_space(int n)
+void space(int n)
 {
-    for (int i = 0; i < n; i++)
+    for(int i = 0; i < n; i++)
     {
         printf(" ");
+    }
+}
+
+void block(int n)
+{
+    for(int i = 0; i < n; i++)
+    {
+        printf("#");
     }
 }
