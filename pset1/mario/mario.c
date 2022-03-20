@@ -11,7 +11,7 @@ int main(void)
     {
         n = get_int("Tamanho: ");
     }
-    while();
+    while(n > 1 || n < 8);
 
     int qtd_space = n - 1;
     int qtd_block = 1;
