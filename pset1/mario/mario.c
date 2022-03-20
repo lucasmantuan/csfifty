@@ -5,16 +5,15 @@ int main(void)
 {
     int l = 8;
     int m = 1;
-    for (int i = 0; i < l; i++)
+//    for (int i = 0; i < l; i++)
     {
         for (int j = 0; j < m; j++)
         {
-            printf("#");
-
-            for (int k = 0; k <0 ; k++)
+            for (int k = 0; k < l - 1; k++)
             {
-                printf("#");
+                printf(".");
             }
+            printf("#");
         }
         m++;
         printf("\n");
