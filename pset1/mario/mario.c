@@ -19,3 +19,8 @@ int main(void)
             printf("\n");
 //    }
 }
+
+int print_space(void)
+{
+
+}
