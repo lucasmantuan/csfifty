@@ -7,11 +7,11 @@ void block(int n);
 int main(void)
 {
     int n;
-
     do
-
-    while
-
+    {
+        n = get_int("Tamanho: ");
+    }
+    while(n > 1);
 
     int qtd_space = n - 1;
     int qtd_block = 1;
