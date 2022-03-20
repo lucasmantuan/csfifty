@@ -8,5 +8,5 @@ int main(void)
 
     float z = x / y;
 
-    printf("%li\n", z);
+    printf("%f\n", z);
 }
