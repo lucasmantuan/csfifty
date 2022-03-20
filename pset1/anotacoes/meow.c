@@ -1,10 +1,10 @@
 #include <stdio.h>
 
-void meow(void);
+void meow(int n);
 
 int main(void)
 {
-    meow(3);
+    meow(5);
 }
 
 void meow(int n)
