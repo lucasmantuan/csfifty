@@ -3,7 +3,7 @@
 
 int main(void)
 {
-    int n = 3;
+    int n = 8;
     for (int j = 0; j < n; j++)
     {
         for (int i = 0; i < n; i++)
