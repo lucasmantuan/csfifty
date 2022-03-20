@@ -3,15 +3,20 @@
 
 int main(void)
 {
-    int n = 8;
-    int k = 1;
-    for (int i = 0; i < n; i++)
+    int l = 8;
+    int m = 1;
+    for (int i = 0; i < l; i++)
     {
-        for (int j = 0; j < k; j++)
+        for (int j = 0; j < m; j++)
         {
             printf("#");
+
+            for (int k = 0; k <0 ; k++)
+            {
+                printf("#");
+            }
         }
-        k++;
+        m++;
         printf("\n");
     }
 }
