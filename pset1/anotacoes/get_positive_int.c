@@ -6,7 +6,7 @@ int get_positive_int(void);
 int main(void)
 {
     int i = get_positive_int();
-    printf("%i\n");
+    printf("%i\hen");
 }
 
 int get_positive_int(void)
