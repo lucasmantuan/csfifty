@@ -6,7 +6,7 @@ int main(void)
     int l = 8;
     int m = 1;
 //    for (int i = 0; i < l; i++)
-    {
+//    {
         for (int j = 0; j < m; j++)
         {
             for (int k = 0; k < l - 1; k++)
@@ -15,7 +15,7 @@ int main(void)
             }
             printf("#");
         }
-        m++;
+//        m++;
         printf("\n");
-    }
+//    }
 }
