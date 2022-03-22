@@ -3,7 +3,7 @@
 
 void space(int n);
 void block(int n);
-void get_size(int n);
+int get_size(void);
 
 int main(void)
 {
