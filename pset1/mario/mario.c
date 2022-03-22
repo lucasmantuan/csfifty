@@ -7,14 +7,15 @@ int get_size(void);
 
 int main(void)
 {
-
+    // Armazena o número informado
     int n = get_size();
-    printf("%i\n", n);
 
+    // Define o tamanho do bloco e espaço inicial
     int qtd_space = n - 1;
     int qtd_block = 1;
 
-    for(int i = 0; i < n; i++)
+    // Desenha os blocos na tela
+    for (int i = 0; i < n; i++)
     {
         space(qtd_space);
         block(qtd_block);
@@ -24,6 +25,7 @@ int main(void)
     }
 }
 
+// Função que obtem um número entre 1 e 8
 int get_size(void)
 {
     int size;
@@ -31,21 +33,23 @@ int get_size(void)
     {
         size = get_int("Tamanho: ");
     }
-    while(size < 1 || size > 8);
+    while (size < 1 || size > 8);
     return size;
 }
 
+// Função que adiciona espaços
 void space(int n)
 {
-    for(int i = 0; i < n; i++)
+    for (int i = 0; i < n; i++)
     {
         printf(" ");
     }
 }
 
+// Função que adiciona blocos
 void block(int n)
 {
-    for(int i = 0; i < n; i++)
+    for (int i = 0; i < n; i++)
     {
         printf("#");
     }
