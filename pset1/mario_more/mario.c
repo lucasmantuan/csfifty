@@ -20,7 +20,7 @@ int main(void)
         space(qtd_space);
         block(qtd_block);
         space(2);
-
+        block(qtd_block);
         qtd_space--;
         qtd_block++;
         printf("\n");
