@@ -3,15 +3,13 @@
 
 void space(int n);
 void block(int n);
+void get_size(int n);
 
 int main(void)
 {
-    int n;
-    do
-    {
-        n = get_int("Tamanho: ");
-    }
-    while(n > 1 || n < 8);
+
+    int n = get_size();
+    printf("%i\n", n);
 
     int qtd_space = n - 1;
     int qtd_block = 1;
@@ -24,6 +22,17 @@ int main(void)
         qtd_block++;
         printf("\n");
     }
+}
+
+int get_size(void)
+{
+    int size;
+    do
+    {
+        size = get_int("Tamanho: ");
+    }
+    while(size < 1);
+    return size;
 }
 
 void space(int n)
