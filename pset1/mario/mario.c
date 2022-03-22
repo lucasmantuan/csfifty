@@ -31,7 +31,7 @@ int get_size(void)
     {
         size = get_int("Tamanho: ");
     }
-    while(size < 1);
+    while(size < 1 || size > 8);
     return size;
 }
 
