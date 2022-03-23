@@ -7,7 +7,7 @@ int main(void)
 {
 
     float change = get_change();
-    printf("%f\n", change);
+    printf("%f.50\n", change);
 
 
 /*     // solicita que o usuário insira o valor do troco
@@ -57,7 +57,7 @@ int main(void)
     return 0; */
 }
 
-// função que obtém um número positivo
+// função que obtém um número positivo e converte para centavos
 int get_change(void)
 {
     int change;
