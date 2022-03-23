@@ -1,5 +1,6 @@
 #include <cs50.h>
 #include <stdio.h>
+#include <math.h>
 
 int get_change(void);
 
@@ -7,7 +8,7 @@ int main(void)
 {
 
     float change = get_change();
-    printf("%f.50\n", change);
+    printf("%.50f\n", change);
 
 
 /*     // solicita que o usuário insira o valor do troco
@@ -68,5 +69,6 @@ int get_change(void)
     }
     while (change < 1 );
 
-    return change;
+
+    return round(change * 100);
 }
