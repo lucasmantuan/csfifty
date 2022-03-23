@@ -8,52 +8,37 @@ int main(void)
 {
 
     int troco = get_troco();
-    int moedas;
-    printf("%i\n", troco);
+    int moedas = 0;
 
+    // faz a contagem da quantidade de moedas
+    int troco é o troco;
+    int j  é as moedas
 
-    // verifica se o valor é maior que zero
-    int i = 0;
-    while ((i != 1))
+    while ((troco != 0))
     {
-        if (f > 0)
+        if (troco >= 25)
         {
-             // faz a contagem da quantidade de moedas
-            int change = f * 100;
-            int j = 0;
-
-            while ((change != 0))
-            {
-                if (change >= 25)
-                {
-                    change = change - 25;
-                    j = j + 1;
-                }
-                else if (change < 25 && change >= 10)
-                {
-                    change = change - 10;
-                    j = j + 1;
-                }
-                else if (change < 10 && change >= 5)
-                {
-                    change = change - 5;
-                    j = j + 1;
-                }
-                else if (change < 5 && change >= 1)
-                {
-                    change = change - 1;
-                    j = j + 1;
-                }
-            }
-        printf("%d\n", j);
-        i = 1;
+            troco = troco - 25;
+            j = j + 1;
         }
-        else
+        else if (troco < 25 && troco >= 10)
         {
-            f = get_float("Desculpe? Quanto você disse?\n");
+            troco = troco - 10;
+            j = j + 1;
+        }
+        else if (troco < 10 && troco >= 5)
+        {
+            troco = troco - 5;
+            j = j + 1;
+        }
+        else if (troco < 5 && troco >= 1)
+        {
+            troco = troco - 1;
+            j = j + 1;
         }
     }
-    return 0; */
+
+    printf("%i\n", moedas);
 }
 
 // função que obtém um número positivo e converte para centavos
