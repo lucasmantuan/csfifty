@@ -5,8 +5,7 @@ int main(void)
 {
 
     // solicita que o usuário insira o valor do troco
-    printf("Por favor, digite o valor do troco desejado.\n");
-    float f = get_float();
+    float f = get_float("Por favor, digite o valor do troco desejado. ");
 
     // verifica se o valor é maior que zero
     int i = 0;
@@ -46,8 +45,7 @@ int main(void)
         }
         else
         {
-            printf("Desculpe? Quanto você disse?\n");
-            f = get_float();
+            f = get_float("Desculpe? Quanto você disse?\n");
         }
     }
     return 0;
