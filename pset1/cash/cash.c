@@ -1,10 +1,14 @@
 #include <cs50.h>
 #include <stdio.h>
 
+int get_change(void);
+
 int main(void)
 {
 
-    // solicita que o usuário insira o valor do troco
+    
+
+/*     // solicita que o usuário insira o valor do troco
     float f = get_float("Por favor, digite o valor do troco desejado. ");
 
     // verifica se o valor é maior que zero
@@ -48,7 +52,7 @@ int main(void)
             f = get_float("Desculpe? Quanto você disse?\n");
         }
     }
-    return 0;
+    return 0; */
 }
 
 // Função que obtem um número positivo
