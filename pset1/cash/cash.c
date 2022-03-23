@@ -2,13 +2,13 @@
 #include <stdio.h>
 #include <math.h>
 
-int get_change(void);
+float get_troco(void);
 
 int main(void)
 {
 
-    float change = get_change();
-    printf("%.50f\n", change);
+    float troco = get_troco();
+    printf("%.50f\n", troco);
 
 
 /*     // solicita que o usuário insira o valor do troco
@@ -59,16 +59,17 @@ int main(void)
 }
 
 // função que obtém um número positivo e converte para centavos
-int get_change(void)
+float get_troco(void)
 {
-    int change;
+    float troco;
 
     do
     {
-        change = get_float("Digite o troco desejado: ");
+        troco = get_float("Digite o troco desejado: ");
     }
-    while (change < 1 );
+    while (troco < 1 );
 
+    //int centavos = troco * 100
 
-    return round(change * 100);
+    return troco;
 }
