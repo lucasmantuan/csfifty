@@ -47,7 +47,7 @@ int main(void)
         else
         {
             printf("Desculpe? Quanto você disse?\n");
-            f = GetFloat();
+            f = get_float();
         }
     }
     return 0;
