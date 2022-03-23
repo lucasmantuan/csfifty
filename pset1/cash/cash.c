@@ -17,7 +17,7 @@ int main(void)
              // faz a contagem da quantidade de moedas
             int change = f * 100;
             int j = 0;
-            
+
             while ((change != 0))
             {
                 if (change >= 25)
@@ -41,7 +41,7 @@ int main(void)
                     j = j + 1;
                 }
             }
-        printf("%d\n", j);        
+        printf("%d\n", j);
         i = 1;
         }
         else
