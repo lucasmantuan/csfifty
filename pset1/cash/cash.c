@@ -67,9 +67,9 @@ float get_troco(void)
     {
         troco = get_float("Digite o troco desejado: ");
     }
-    while (troco < 1 );
+    while (troco < 0);
 
-    //int centavos = troco * 100
+    float centavos = round(troco * 100);
 
-    return troco;
+    return centavos;
 }
