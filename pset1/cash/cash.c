@@ -6,7 +6,9 @@ int get_change(void);
 int main(void)
 {
 
-    
+    float change = get_change();
+    printf("%f\n", change);
+
 
 /*     // solicita que o usuário insira o valor do troco
     float f = get_float("Por favor, digite o valor do troco desejado. ");
@@ -55,14 +57,16 @@ int main(void)
     return 0; */
 }
 
-// Função que obtem um número positivo
+// função que obtém um número positivo
 int get_change(void)
 {
     int change;
+
     do
     {
         change = get_float("Digite o troco desejado: ");
     }
-    while (change > 0 );
+    while (change < 1 );
+
     return change;
 }
