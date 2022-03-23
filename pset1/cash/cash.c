@@ -7,12 +7,10 @@ float get_troco(void);
 int main(void)
 {
 
-    float troco = get_troco();
-    printf("%.50f\n", troco);
+    int troco = get_troco();
+    int moedas;
+    printf("%i\n", troco);
 
-
-/*     // solicita que o usuário insira o valor do troco
-    float f = get_float("Por favor, digite o valor do troco desejado. ");
 
     // verifica se o valor é maior que zero
     int i = 0;
@@ -69,7 +67,7 @@ float get_troco(void)
     }
     while (troco < 0);
 
-    float centavos = round(troco * 100);
+    int centavos = round(troco * 100);
 
     return centavos;
 }
