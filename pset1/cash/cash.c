@@ -52,13 +52,13 @@ int main(void)
 }
 
 // Função que obtem um número positivo
-int get_size(void)
+int get_change(void)
 {
-    int size;
+    int change;
     do
     {
-        size = get_int("Tamanho: ");
+        change = get_float("Digite o troco desejado: ");
     }
-    while (size < 1 || size > 8);
-    return size;
+    while (change > 0 );
+    return change;
 }
