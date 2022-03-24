@@ -5,9 +5,11 @@ int main (void)
 {
     long card = 1234;
 
-    float teste = (float) card / 10;
+    int teste;
 
-    teste = teste % 10;
+    teste = teste - (card % 100);
 
-    printf("%f\n", teste);
+    teste = teste / 10;
+
+    printf("%i\n", teste);
 }
