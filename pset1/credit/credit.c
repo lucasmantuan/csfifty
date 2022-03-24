@@ -5,7 +5,7 @@ int somar(int);
 
 int main (void)
 {
-    long card = 1219191714;
+    long card = 4003600000000014;
 
     int a, b;
     int x = 10;
@@ -15,7 +15,7 @@ int main (void)
     int acc = 0;
     int res;
 
-    for (int i = 0; i < 9; i++)
+    for (int i = 0; i < 16; i++)
     {
         p = i % 2;
 
@@ -35,6 +35,7 @@ int main (void)
             }
             //printf("%i\n", acc);
         } else {
+            acc += a;
             printf("a %i \n", a);
         }
 
