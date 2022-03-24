@@ -5,5 +5,8 @@ int main (void)
 {
     long card = 123;
 
-    printf(%li, card)
+    int teste = card % 10;
+
+
+    printf("%i\n", teste);
 }
