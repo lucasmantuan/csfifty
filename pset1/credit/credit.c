@@ -5,7 +5,7 @@ int somar(int);
 
 int main (void)
 {
-    long card = 400361;
+    long card = 400631;
 
     int a, b;
     int x = 10;
