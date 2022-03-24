@@ -3,11 +3,18 @@
 
 int main (void)
 {
-    long card = 1234;
+    long card = 4583;
 
     int a;
+    int x = 10;
+    int y = 1;
 
-    a = (card % 100) / 10;
+    for (int i = 0; i < card.length; i++ )
+    {
+        a = (card % x) / y;
+        x *= 10;
+        y *= 10;
+        printf("%i\n", a);
+    }
 
-    printf("%i\n", a);
 }
