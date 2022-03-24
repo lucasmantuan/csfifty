@@ -5,7 +5,7 @@ int somar(int);
 
 int main (void)
 {
-    long card = 1219191415;
+    long card = 1219191715;
 
     int a, b;
     int x = 10;
@@ -25,7 +25,9 @@ int main (void)
             b = a * 2;
             if (b >= 10)
             {
-
+                int res = somar(b);
+                
+                printf("%i\n", res);
                 //printf("maior que 10 - ");
             }
             //printf("%i\n", b);
@@ -33,8 +35,6 @@ int main (void)
 
         //printf("%i\n", a);
     }
-int res = somar(14);
-printf("%i\n", res);
 }
 
 int somar(int n)
