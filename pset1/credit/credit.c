@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <cs50.h>
 
-void soma(int n);
+int somar(int);
 
 int main (void)
 {
@@ -33,7 +33,8 @@ int main (void)
 
         //printf("%i\n", a);
     }
-somar(12);
+int res = somar(14);
+printf("%i\n", res);
 }
 
 int somar(int n)
@@ -51,5 +52,5 @@ int somar(int n)
         soma += z;
     }
 
-    return n;
+    return soma;
 }
