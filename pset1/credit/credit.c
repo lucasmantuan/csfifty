@@ -3,7 +3,7 @@
 
 int main (void)
 {
-    long card = 1919191415;
+    long card = 1219191415;
 
     int a, b;
     int x = 10;
@@ -23,6 +23,7 @@ int main (void)
             b = a * 2;
             if (b >= 10)
             {
+
                 printf("maior que 10 - ");
             }
             printf("%i\n", b);
@@ -32,3 +33,5 @@ int main (void)
     }
 
 }
+
+int 
