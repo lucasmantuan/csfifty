@@ -3,9 +3,9 @@
 
 int main (void)
 {
-    long card = 1212121212;
+    long card = 1212121919;
 
-    int a;
+    int a, b;
     int x = 10;
     int y = 1;
     int p;
@@ -20,10 +20,11 @@ int main (void)
 
         if (p == 0)
         {
-            printf("par\n");
+            b = a * 2;
+            printf("%i\n", b);
         }
 
-        printf("%i\n", a);
+        //printf("%i\n", a);
     }
 
 }
