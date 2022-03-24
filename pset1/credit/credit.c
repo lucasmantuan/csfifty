@@ -3,7 +3,7 @@
 
 int main (void)
 {
-    long card = 1212121919;
+    long card = 1919191919;
 
     int a, b;
     int x = 10;
