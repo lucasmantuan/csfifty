@@ -33,10 +33,10 @@ int main (void)
 
         //printf("%i\n", a);
     }
-somas(12);
+somar(12);
 }
 
-int somas(int n)
+int somar(int n)
 {
     int soma = 0;
     int x = 10;
@@ -51,5 +51,5 @@ int somas(int n)
         soma += z;
     }
 
-    return soma;
+    return n;
 }
