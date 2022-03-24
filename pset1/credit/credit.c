@@ -3,9 +3,9 @@
 
 int main (void)
 {
-    long card = 123;
+    long card = 1234;
 
-    int teste = card % 100;
+    int teste = card % 10;
 
 
     printf("%i\n", teste);
