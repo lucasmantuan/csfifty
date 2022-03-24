@@ -33,17 +33,18 @@ int main (void)
 
         //printf("%i\n", a);
     }
-
+soma(18);
 }
 
 void soma(int n)
 {
     int s;
-//    for (int i = 0; i < 2; i++)
-    //{
-        s = (n % 10) / 1;
-        printf("%i\n", s);
-    //}
-}
+    int x = 10;
+    int y = 1;
 
-soma(18);
+    for (int i = 0; i < 2; i++)
+    {
+        s = (n % x) / y;
+        printf("%i\n", s);
+    }
+}
