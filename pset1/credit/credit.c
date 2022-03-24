@@ -26,7 +26,7 @@ int main (void)
             if (b >= 10)
             {
                 int res = somar(b);
-                
+                res += res;
                 printf("%i\n", res);
                 //printf("maior que 10 - ");
             }
