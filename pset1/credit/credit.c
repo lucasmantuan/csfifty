@@ -3,7 +3,7 @@
 
 int main (void)
 {
-    long card = 1234567890;
+    long card = 1212121212;
 
     int a;
     int x = 10;
@@ -14,18 +14,15 @@ int main (void)
     {
         p = i % 2;
 
+        a = (card % x) / y;
+        x *= 10;
+        y *= 10;
+
         if (p == 0)
         {
             printf("par\n");
         }
-        else
-        {
-            printf("impar\n");
-        }
 
-        a = (card % x) / y;
-        x *= 10;
-        y *= 10;
         printf("%i\n", a);
     }
 
