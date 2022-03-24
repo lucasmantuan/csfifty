@@ -12,6 +12,9 @@ int main (void)
     int y = 1;
     int p;
 
+    int acc = 0;
+    int res;
+
     for (int i = 0; i < 9; i++)
     {
         p = i % 2;
@@ -25,10 +28,8 @@ int main (void)
             b = a * 2;
             if (b >= 10)
             {
-                int res = somar(b);
-                res += res;
-                printf("%i\n", res);
-                //printf("maior que 10 - ");
+                res = somar(b);
+                acc += res;
             }
             //printf("%i\n", b);
         }
