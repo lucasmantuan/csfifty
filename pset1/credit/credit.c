@@ -33,10 +33,10 @@ int main (void)
 
         //printf("%i\n", a);
     }
-soma(12);
+somas(12);
 }
 
-int soma(int n)
+int somas(int n)
 {
     int soma = 0;
     int x = 10;
