@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <cs50.h>
 
+void soma(int n);
+
 int main (void)
 {
     long card = 1219191415;
@@ -24,9 +26,9 @@ int main (void)
             if (b >= 10)
             {
 
-                printf("maior que 10 - ");
+                //printf("maior que 10 - ");
             }
-            printf("%i\n", b);
+            //printf("%i\n", b);
         }
 
         //printf("%i\n", a);
@@ -34,10 +36,14 @@ int main (void)
 
 }
 
-int teste(void)
+void soma(int n)
 {
-    for (int i = 0; i < 2; i++)
-    {
-
-    }
+    int s;
+//    for (int i = 0; i < 2; i++)
+    //{
+        s = (n % 10) / 1;
+        printf("%i\n", s);
+    //}
 }
+
+soma(18);
