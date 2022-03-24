@@ -7,15 +7,16 @@ int main (void)
 {
     long card = 4003600000000014;
 
-    int a, b;
-    int x = 10;
-    int y = 1;
+    long a;
+    int b;
+    long x = 10;
+    long y = 1;
     int p;
 
     int acc = 0;
     int res;
 
-    for (int i = 0; i < 17; i++)
+    for (int i = 0; i < 16; i++)
     {
         p = i % 2;
 
@@ -23,7 +24,8 @@ int main (void)
         x *= 10;
         y *= 10;
 
-        printf("antes do if - %i \n", a);
+        printf("a - %li \n", a);
+
 
         if (p != 0) {
 
@@ -43,7 +45,7 @@ int main (void)
 
         //printf("%i\n", a);
     }
-        //printf("acc %i \n", acc);
+        printf("acc %i \n", acc);
 }
 
 int somar(int n)
