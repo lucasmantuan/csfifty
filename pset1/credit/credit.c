@@ -23,8 +23,7 @@ int main (void)
         x *= 10;
         y *= 10;
 
-        if (p == 0)
-        {
+        if (p == 0) {
             b = a * 2;
             if (b >= 10) {
                 res = somar(b);
@@ -35,10 +34,13 @@ int main (void)
                 printf("b %i \n", b);
             }
             //printf("%i\n", acc);
+        } else {
+            printf("a %i \n", a);
         }
 
         //printf("%i\n", a);
     }
+        printf("acc %i \n", acc);
 }
 
 int somar(int n)
