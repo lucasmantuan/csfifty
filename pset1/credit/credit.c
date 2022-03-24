@@ -26,12 +26,15 @@ int main (void)
         if (p == 0)
         {
             b = a * 2;
-            if (b >= 10)
-            {
+            if (b >= 10) {
                 res = somar(b);
                 acc += res;
-            } else 
-            printf("%i\n", b);
+                printf("res %i \n", res);
+            } else {
+                acc += b;
+                printf("b %i \n", b);
+            }
+            //printf("%i\n", acc);
         }
 
         //printf("%i\n", a);
