@@ -8,7 +8,10 @@ int contar_digitos(long n);
 int main (void)
 {
     int resultado = somar_multiplicar_digitos(4003600000000014);
-    printf("%i\n", resultado);
+    if ((resultado % 2) == 0) {
+        printf("%i\n", resultado);
+        printf("Cartão Válido\n");
+    }
 }
 
 // Soma e multiplica os dígitos
