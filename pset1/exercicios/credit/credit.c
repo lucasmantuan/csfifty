@@ -2,22 +2,22 @@
 #include <cs50.h>
 
 int somar_digitos(int n);
-int somar_multiplicar_digitos(long n);
+string somar_multiplicar_digitos(long n);
 int contar_digitos(long n);
 
 int main (void)
 {
-    int resultado = somar_multiplicar_digitos(4003600000000014);
-    if ((resultado % 2) == 0) {
-        printf("%i\n", resultado);
-        printf("Cartão Válido\n");
-    }
+    long cartao = get_long("Número: ");
+    string resultado = somar_multiplicar_digitos(cartao);
+    printf("%s\n", resultado);
 }
 
 // Soma e multiplica os dígitos
-int somar_multiplicar_digitos(long n)
+string somar_multiplicar_digitos(long n)
 {
     int d = contar_digitos(n);
+    int pr;
+    int sg;
     int posicao;
     int multiplicacao = 0;
     int soma = 0;
@@ -32,6 +32,15 @@ int somar_multiplicar_digitos(long n)
         y *= 10;
         posicao = i % 2;
 
+        if (i + 1 == d)
+        {
+            pr = z;
+        }
+        if (i + 2 == d)
+        {
+            sg = z;
+        }
+
         if (posicao != 0) {
             multiplicacao = z * 2;
 
@@ -45,7 +54,28 @@ int somar_multiplicar_digitos(long n)
         }
     }
 
-    return soma;
+    // Faz a validação do número do cartao
+    if (((soma % 10) / 1) != 0)
+    {
+        return "INVALID";
+    }
+    else if (pr == 3 && (sg == 4 || sg == 7) && d == 15)
+    {
+        return "AMEX";
+    }
+    else if (pr == 5 && (sg == 1 || sg == 2 || sg == 3 || sg == 4 || sg == 5) && d == 16)
+    {
+        return "MASTERCARD";
+    }
+    else if (pr == 4 && (d == 13 || d == 16))
+    {
+        return "VISA";
+    }
+    else
+    {
+        return "INVALID";
+    }
+
 }
 
 // Soma os dígitos internos
