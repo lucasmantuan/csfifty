@@ -67,37 +67,37 @@ int main(void)
        {
            if (two == 34 || two == 37)
             {
-           printf("amex\n");
+           printf("AMEX\n");
             }
-       else { printf("invalid\n"); }
+       else { printf("INVALID\n"); }
         }
-        else if (len == 16) // mastercard or visa
+        else if (len == 16) // MASTERCARD or VISA
             {
             if (one == 4)
             {
-                printf("visa\n");
+                printf("VISA\n");
             }
         else if (two > 50 && two < 56)
             {
-                printf("mastercard\n");
+                printf("MASTERCARD\n");
             }
-                else    { printf("invalid\n"); }
+                else    { printf("INVALID\n"); }
         }
-        else if (len == 13) // visa
+        else if (len == 13) // VISA
             {
                 if (one == 4)
                 {
-                printf("visa\n");
+                printf("VISA\n");
                 }
-                else {printf("invalid\n");}
+                else {printf("INVALID\n");}
             }
         else
             {
-            printf("invalid\n");
+            printf("INVALID\n");
             }
    }
     else
     {
-      printf("invalid\n");
+      printf("INVALID\n");
     }
 }
