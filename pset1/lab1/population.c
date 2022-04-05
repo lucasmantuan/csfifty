@@ -22,7 +22,7 @@ int main(void)
   }
   while (inicial < final);
 
-  printf("%i\n", anos);
+  //printf("%i\n", anos);
 }
 
 int get_inicial(void)
@@ -39,6 +39,7 @@ int get_inicial(void)
 
 int get_final(int x)
 {
+  printf("%i\n", x);
   int n;
   do
   {
