@@ -5,8 +5,8 @@
 int main(void)
 {
   int inicial = 10;
-  int final = 12;
-  int anos;
+  int final = 120;
+  int anos = 0;
   float nascimentos;
   float mortes;
 
@@ -17,7 +17,7 @@ int main(void)
     inicial = inicial + (int) nascimentos - (int) mortes;
     anos++;
   }
-  while (final < 2);
+  while (inicial < final);
 
   printf("%i\n", anos);
 }
