@@ -14,17 +14,17 @@ int main(void)
     float nascimentos;
     float mortes;
 
- // Calcula a quantidade de anos para o crescimento populacional
-  do
-  {
-    nascimentos = trunc(inicial / 3);
-    mortes = trunc(inicial / 4);
-    inicial = inicial + (int) nascimentos - (int) mortes;
-    anos++;
-  }
-  while (inicial < final);
+  //  Calcula a quantidade de anos para o crescimento populacional
+    do
+    {
+      nascimentos = trunc(inicial / 3);
+      mortes = trunc(inicial / 4);
+      inicial = inicial + (int) nascimentos - (int) mortes;
+      anos++;
+    }
+    while (inicial < final);
 
-  printf("Years: %i\n", anos);
+    printf("Years: %i\n", anos);
 }
 
 // Solicita a população inicial
