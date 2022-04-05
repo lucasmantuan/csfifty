@@ -53,7 +53,7 @@ int get_final(int x)
     {
         n = get_int("End size: ");
     }
-    while (n < x + 1);
+    while (n < x);
 
     return n;
 }
