@@ -3,9 +3,9 @@
 
 int main void
 {
-  int popInicial = 10;
-  int popFinal = 20;
-  int totAnos;
+  int inicial = 10;
+  int final = 20;
+  int anos;
 
   
 }
