@@ -5,17 +5,19 @@
 int main(void)
 {
   int inicial = 10;
-  int final = 20;
+  int final = 12;
   int anos;
   float nascimentos;
   float mortes;
 
-  for (int i = 0; i < 10; i++)
+  do
   {
     nascimentos = trunc(inicial / 3);
     mortes = trunc(inicial / 4);
     inicial = inicial + (int) nascimentos - (int) mortes;
-    printf("%i\n", inicial);
+    anos++;
   }
+  while (final < 2);
 
+  printf("%i\n", anos);
 }
