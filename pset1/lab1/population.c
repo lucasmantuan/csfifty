@@ -13,6 +13,7 @@ int main(void)
   float nascimentos;
   float mortes;
 
+ // Calcula a quantidade de anos para o crescimento populacional
   do
   {
     nascimentos = trunc(inicial / 3);
@@ -22,9 +23,10 @@ int main(void)
   }
   while (inicial < final);
 
-  printf("%i\n", anos);
+  printf("Years: %i\n", anos);
 }
 
+// Solicita a população inicial
 int get_inicial(void)
 {
   int n;
@@ -37,6 +39,7 @@ int get_inicial(void)
   return n;
 }
 
+// Solicita a população final
 int get_final(int x)
 {
   int n;
