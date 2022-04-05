@@ -14,24 +14,24 @@ int main(void)
     float nascimentos;
     float mortes;
 
-    do
+    // Se a quantidade de nascimentos for igual a quantidade de mortes não adiona um novo ano
+    if (inicial != final)
     {
-        // Calcula a quantidade de nascimentos e mortes arredondando os números
-        nascimentos = trunc(inicial / 3);
-        mortes = trunc(inicial / 4);
-        
-        // Atualiza o valor inicial levando em consideração a quantidade de nascimentos e mortes
-        inicial = inicial + (int) nascimentos - (int) mortes;
-
-        // Se a quantidade de nascimentos for igual a quantidade de mortes não adiona um novo ano
-        if (inicial == final)
+        do
         {
+            // Calcula a quantidade de nascimentos e mortes arredondando os números
+            nascimentos = trunc(inicial / 3);
+            mortes = trunc(inicial / 4);
+
+            // Atualiza o valor inicial levando em consideração a quantidade de nascimentos e mortes
+            inicial = inicial + (int) nascimentos - (int) mortes;
+
             anos++;
         }
-    }
 
-    // Repepte enquanto a quantidade inicial for menor ou igual a quantidade final
-    while (inicial < final);
+        // Repepte enquanto a quantidade inicial for menor ou igual a quantidade final
+        while (inicial < final);
+    }
 
     printf("Years: %i\n", anos);
 }
