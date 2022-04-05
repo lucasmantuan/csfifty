@@ -14,13 +14,13 @@ int main(void)
     float nascimentos;
     float mortes;
 
-  //  Calcula a quantidade de anos para o crescimento populacional
+    // Calcula a quantidade de anos para o crescimento populacional
     do
     {
-      nascimentos = trunc(inicial / 3);
-      mortes = trunc(inicial / 4);
-      inicial = inicial + (int) nascimentos - (int) mortes;
-      anos++;
+        nascimentos = trunc(inicial / 3);
+        mortes = trunc(inicial / 4);
+        inicial = inicial + (int) nascimentos - (int) mortes;
+        anos++;
     }
     while (inicial < final);
 
@@ -30,25 +30,27 @@ int main(void)
 // Solicita a população inicial
 int get_inicial(void)
 {
-  int n;
-  do
-  {
-    n = get_int("Start size: ");
-  }
-  while (n < 9);
+    int n;
 
-  return n;
+    do
+    {
+        n = get_int("Start size: ");
+    }
+    while (n < 9);
+
+    return n;
 }
 
 // Solicita a população final
 int get_final(int x)
 {
-  int n;
-  do
-  {
-    n = get_int("End size: ");
-  }
-  while (n < x + 1);
+    int n;
 
-  return n;
+    do
+    {
+        n = get_int("End size: ");
+    }
+    while (n < x + 1);
+
+    return n;
 }
