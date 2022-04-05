@@ -2,12 +2,13 @@
 #include <cs50.h>
 #include <math.h>
 
-int get_inicio(int n);
+int get_inicial(void);
+int get_final(int x);
 
 int main(void)
 {
-  int inicial = get_inicio();
-  int final = 20;
+  int inicial = get_inicial();
+  int final = get_final(inicial);
   int anos = 0;
   float nascimentos;
   float mortes;
@@ -24,11 +25,26 @@ int main(void)
   printf("%i\n", anos);
 }
 
-int get_inicio(int n)
+int get_inicial(void)
 {
+  int n;
   do
   {
     n = get_int("Start size: ");
   }
   while (n < 9);
+
+  return n;
+}
+
+int get_final(int x)
+{
+  int n;
+  do
+  {
+    n = get_int("End size: ");
+  }
+  while (x < n);
+
+  return n;
 }
