@@ -24,8 +24,14 @@ int main(void)
 
         // Atualiza o valor inicial levando em consideração a quantidade de nascimentos e mortes
         inicial = inicial + (int) nascimentos - (int) mortes;
-        anos++;
+
+        // Se a quantidade de nascimentos for igual a quantidade de mortes não adiona um novo ano
+        if (inicial == final)
+        {
+            anos++;
+        }
     }
+
     // Repepte enquanto a quantidade inicial for menor ou igual a quantidade final
     while (inicial < final);
 
