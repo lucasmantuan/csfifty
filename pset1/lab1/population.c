@@ -18,10 +18,8 @@ int main(void)
     {
         // Calcula a quantidade de nascimentos e mortes arredondando os números
         nascimentos = trunc(inicial / 3);
-        printf("Nascimentos: %f\n", nascimentos);
         mortes = trunc(inicial / 4);
-        printf("Mortes: %f\n", nascimentos);
-
+        
         // Atualiza o valor inicial levando em consideração a quantidade de nascimentos e mortes
         inicial = inicial + (int) nascimentos - (int) mortes;
 
