@@ -25,7 +25,7 @@ int main(void)
         anos++;
     }
     // Repepte enquanto a quantidade inicial for menor ou igual a quantidade final
-    while (inicial <= final);
+    while (inicial < final);
 
     printf("Years: %i\n", anos);
 }
