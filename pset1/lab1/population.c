@@ -7,11 +7,12 @@ int get_final(int x);
 
 int main(void)
 {
-  int inicial = get_inicial();
-  int final = get_final(inicial);
-  int anos = 0;
-  float nascimentos;
-  float mortes;
+    int inicial = get_inicial();
+    int final = get_final(inicial);
+    int anos = 0;
+
+    float nascimentos;
+    float mortes;
 
  // Calcula a quantidade de anos para o crescimento populacional
   do
