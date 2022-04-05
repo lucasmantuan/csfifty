@@ -8,12 +8,14 @@ int main(void)
   int final = 20;
   int anos;
 
-  float nascimentos;
-  float mortes;
+  for (int i = 0; i < 10; i++)
+  {
+    printf(i);
+  }
 
-  nascimentos = trunc(inicial / 3);
-  printf("%f\n", nascimentos);
+  float nascimentos = trunc(inicial / 3);
+  float mortes = trunc(inicial / 4);
 
-  mortes = trunc(inicial / 4);
-  printf("%f\n", mortes);
+  inicial = inicial + (int) nascimentos - (int) mortes;
+  printf("%i\n", inicial);
 }
