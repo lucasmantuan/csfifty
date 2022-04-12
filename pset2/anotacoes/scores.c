@@ -1,6 +1,7 @@
 #include <cs50.h>
 #include <stdio.h>
 
+float media(int quantidade, int array[]);
 const int TOTAL = 3;
 
 int main(void)
@@ -12,7 +13,7 @@ int main(void)
     }
 
     // imprimir a média
-    printf("Média: %f \n", (scores[0] + scores[1] + scores[2]) / TOTAL);
+    printf("Média: %f \n", media(TOTAL, scores));
 }
 
 float media(int quantidade, int array[])
