@@ -3,5 +3,5 @@
 #include <ctype.h>
 
 int main(void) {
-    
+    string sentence
 }
