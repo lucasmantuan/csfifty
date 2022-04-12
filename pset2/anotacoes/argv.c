@@ -5,10 +5,10 @@ int main(int argc, string argv[])
 {
     if (argc == 2)
     {
-        printf("oi, %s\n", argv[1]);
+        printf("Oi, %s\n", argv[1]);
     }
     else
     {
-        printf("olá, mundo\n";
+        printf("Olá, mundo\n");
     }
 }
