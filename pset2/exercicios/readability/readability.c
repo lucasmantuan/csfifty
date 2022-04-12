@@ -8,11 +8,8 @@ int main(void) {
 
     for (int i = 0, n = strlen(text); i < n; i++)
     {
-        if (isalpha(text[i]))
-        {
-            
-        }
 
-        printf("%c\n", text[i]);
+
+        printf("%i\n", isalpha(text[i]));
     }
 }
