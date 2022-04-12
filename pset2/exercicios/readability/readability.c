@@ -5,5 +5,8 @@
 int main(void) {
     string text = get_string("Text: ");
 
-    for (int i = 0, n = strlen(text); )
+    for (int i = 0, n = strlen(text); i < n; i++)
+    {
+        printf("%c\n", text[i]);
+    }
 }
