@@ -8,7 +8,7 @@ int main(void)
     int scores[TOTAL];
     for (int i = 0; i < TOTAL; i++)
     {
-        socores[i] = get_int("Pontuação: ")
+        scores[i] = get_int("Pontuação: ");
     }
 
     // imprimir a média
