@@ -3,5 +3,7 @@
 #include <ctype.h>
 
 int main(void) {
-    string sentence
+    string text = get_string("Text: ");
+
+    for (int i = 0, n = strlen(text); )
 }
