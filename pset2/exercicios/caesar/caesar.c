@@ -5,8 +5,7 @@ int main(void)
 {
     string plaintext = get_string("plaintext: ");
     int key = 1;
-    string ciphertext;
+    int ciphertext = (int) plaintext[0];
 
-    ciphertext = (int) plaintext;
-    printf("%i\n", plaintext)
+    printf("%i\n", ciphertext);
 }
