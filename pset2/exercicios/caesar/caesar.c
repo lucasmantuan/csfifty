@@ -7,16 +7,20 @@
 int main(int argc, string argv[])
 {
     // guarda a chave informada pelo usuário
-    string z = argv[1];
-    int key = atoi(const string z);
+    int val;
+    char strn1[] = "12546";
+
+    val = atoi(strn1);
+    printf("String value = %s\n", strn1);
+    printf("Integer value = %d\n", val);
+
+    int key = 1;
 
     // verificar os parâmetros informados
     if (argc > 2)
     {
         return printf("Usage: ./caesar key\n");
     }
-
-    printf("%i\n", z);
 
     // solicita o texto para conversão
     string plaintext = get_string("plaintext: ");
