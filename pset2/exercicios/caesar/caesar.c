@@ -7,6 +7,14 @@
 int main(int argc, char *argv[])
 {
     // guarda a chave informada pelo usuário
+
+    char *p;
+    int num;
+    long conv = strtol(argv[1], &p, 10);
+
+
+
+
     int key = atoi(argv[1]);
 
     // verificar os parâmetros informados
