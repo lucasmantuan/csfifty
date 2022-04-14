@@ -8,7 +8,7 @@ int main(void)
     int key = 1;
     //int index = (0 + key) % 26;
 
-    int ciphertext = ((int) plaintext[0] - 97) + key;
+    int ciphertext = (((int) plaintext[0] - 97) + key) % 26;
 
     printf("%i\n", ciphertext);
 }
