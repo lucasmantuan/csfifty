@@ -5,10 +5,9 @@ int main(void)
 {
     string plaintext = get_string("plaintext: ");
     int key = 1;
-    int index = (0 + key) % 26;
+    //int index = (0 + key) % 26;
 
-    int ciphertext = (int) plaintext[index] + key;
+    int ciphertext = atoi(plaintext[0]);
 
-    printf("%i\n", index);
-    printf("%c\n", (char) ciphertext);
+    printf("%c\n", ciphertext);
 }
