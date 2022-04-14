@@ -10,7 +10,7 @@ int main(int argc, char *argv[])
 
     char *p;
     long key = strtol(argv[1], &p, 10);
-    printf("%li\n", key);
+    printf("%i\n", isdigit(key));
 
     // verificar os parâmetros informados
     if (argc > 2)
