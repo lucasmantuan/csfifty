@@ -2,6 +2,7 @@
     "files.associations": {
         "*.js": "javascript",
         "*.jsx": "javascriptreact",
-        "random": "c"
+        "random": "c",
+        "cs50.h": "c"
     }
 }
