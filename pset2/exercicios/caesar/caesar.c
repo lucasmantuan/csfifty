@@ -7,15 +7,10 @@
 int main(int argc, char *argv[])
 {
     // guarda a chave informada pelo usuário
-int atoiN;
-atoiN = atoi(argv[1]);
-printf("atoiN = %d\n", atoiN);
+    int key = atoi(argv[1]);
+    printf("%d\n", key);
 
-int asd;
-asd = isdigit(atoiN);
-printf("asdN = %d\n", asd);
-
-    int key = 1;
+    //int key = 1;
 
     // verificar os parâmetros informados
     if (argc > 2)
