@@ -5,14 +5,10 @@
 
 int main(void)
 {
-    string plaintext = get_string("plaintext: ");
     int key = 1;
-    //int index = (0 + key) % 26;
+    string plaintext = get_string("plaintext: ");
+    int chiperindex = ((((int) plaintext[0] - 97) + key) % 26) + 97;
+    string chipertext = 
 
-    int index = ((((int) plaintext[0] - 97) + key) % 26) + 97;
-
-    string chipertext = Array[1];
-    chipertext[0] = "a";
-
-    printf("%s\n", chipertext);
+    printf("%c\n", chiperindex);
 }
