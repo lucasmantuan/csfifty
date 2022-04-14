@@ -6,14 +6,14 @@
 
 int main(int argc, string argv[])
 {
+    // guarda a chave informada pelo usuário
+    int key = atoi(argv[1]);
+
     // verificar os parâmetros informados
-    if (argc > 2 || isalnum(atoi(argv[1])) == 0)
+    if (argc > 2 || isalnum(key) == 0)
     {
         return printf("Usage: ./caesar key\n");
     }
-
-    // guarda a chave informada pelo usuário
-    int key = atoi(argv[1]);
 
     // solicita o texto para conversão
     string plaintext = get_string("plaintext: ");
