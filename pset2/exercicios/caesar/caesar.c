@@ -16,7 +16,7 @@ int main(int argc, string argv[])
     }
 
     int asd = isalnum(key);
-    printf("%i\n", asd);
+    printf("%i\n", key);
 
     // solicita o texto para conversão
     string plaintext = get_string("plaintext: ");
