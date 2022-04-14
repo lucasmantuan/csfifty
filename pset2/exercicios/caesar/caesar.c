@@ -6,18 +6,10 @@
 
 int main(int argc, char *argv[])
 {
-    // guarda a chave informada pelo usuário
-  char caractere = (char) argv[1][0];
+    char key = (char) argv[1][0];
 
-  // vamos verificar se o usuário informou um dígito
-  // de 0 a 9
-  if(isdigit(caractere))
-    {printf("Voce informou um digito de 0 a 9");}
-
-
-    int key = 1;
-    // verificar os parâmetros informados
-    if (argc > 2)
+    // verifica se o parâmetro digitado é um número
+    if (!isdigit(key))
     {
         return printf("Usage: ./caesar key\n");
     }
