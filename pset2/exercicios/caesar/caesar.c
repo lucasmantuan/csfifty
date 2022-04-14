@@ -1,21 +1,18 @@
 #include <stdio.h>
 #include <cs50.h>
 #include <string.h>
+#include <stdlib.h>
 
-int main(void)
+int main(int argc, string argv[])
 {
-    int key = 1;
+    int key = atoi(argv[1]);
     string plaintext = get_string("plaintext: ");
-
-    string text[strlen(plaintext)];
 
     printf("ciphertext: ");
     for (int i = 0, n = strlen(plaintext); i < n; i++)
     {
         int cipherindex = ((((int) plaintext[i] - 97) + key) % 26) + 97;
-        text[i] = ((char) cipherindex);
         printf("%c", (char) cipherindex);
     }
     printf("\n");
-            printf("%s", text);
 }
