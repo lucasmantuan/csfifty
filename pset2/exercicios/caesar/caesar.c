@@ -7,7 +7,8 @@
 int main(int argc, string argv[])
 {
     // guarda a chave informada pelo usuário
-    int key = atoi(argv[1]);
+    string key = argv[1];
+    atoi(key);
 
     // verificar os parâmetros informados
     if (argc > 2)
