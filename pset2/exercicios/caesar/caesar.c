@@ -7,11 +7,10 @@
 int main(int argc, char *argv[])
 {
     // guarda a chave informada pelo usuário
-    int val;
-    char strn1 = argv[1];
-
-    val = atoi(strn1);
-    printf("Integer value = %i\n", val);
+    char *p;
+    int num;
+    long conv = strtol(argv[1], &p, 10);
+    printf("Integer value = %li\n", conv);
 
     int key = 1;
 
