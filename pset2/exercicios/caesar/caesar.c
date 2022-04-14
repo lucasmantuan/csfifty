@@ -6,6 +6,9 @@
 
 int main(int argc, string argv[])
 {
+    printf("%i\n", argc);
+
+
     // guarda a chave informada pelo usuário
     int key = atoi(argv[1]);
 
