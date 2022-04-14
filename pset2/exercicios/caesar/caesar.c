@@ -7,7 +7,7 @@
 int main(int argc, string argv[])
 {
     // verificar os parâmetros informados
-    if (argc > 2 || isalnum(argv[1]) == 0)
+    if (argc > 2 || isalnum(atoi(argv[1])) == 0)
     {
         return printf("Usage: ./caesar key\n");
     }
