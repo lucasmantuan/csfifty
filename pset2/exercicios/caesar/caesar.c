@@ -7,8 +7,10 @@ int main(void)
 {
     int key = 1;
     string plaintext = get_string("plaintext: ");
+    string chipertext = plaintext;
     int chiperindex = ((((int) plaintext[0] - 97) + key) % 26) + 97;
-    string chipertext = 
 
-    printf("%c\n", chiperindex);
+    chipertext[0] = (char) chiperindex;
+
+    printf("%s\n", chipertext);
 }
