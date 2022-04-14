@@ -7,7 +7,6 @@
 int main(int argc, char *argv[])
 {
     char key = argv[1][0];
-    printf("%c\n", key - '0');
 
     // verificar a quantidade de parâmetros informados
     if (argc > 2)
@@ -32,7 +31,7 @@ int main(int argc, char *argv[])
         if (isalpha(plaintext[i]))
         {
             // ...aplica a fórmula para conversão
-            int cipherindex = ((((int) plaintext[i] - 97) + key) % 26) + 97;
+            int cipherindex = ((((int) plaintext[i] - 97) + (key - '0')) % 26) + 97;
             printf("%c", (char) cipherindex);
         } else
         {
