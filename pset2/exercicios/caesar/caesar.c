@@ -7,8 +7,8 @@
 int main(int argc, string argv[])
 {
     // guarda a chave informada pelo usuário
-    string key = argv[1];
-    atoi(key);
+    string z = argv[1];
+    int z = atoi(key);
 
     // verificar os parâmetros informados
     if (argc > 2)
@@ -17,7 +17,7 @@ int main(int argc, string argv[])
     }
 
     int asd = isalnum(key);
-    printf("%i\n", key);
+    printf("%i\n", z);
 
     // solicita o texto para conversão
     string plaintext = get_string("plaintext: ");
