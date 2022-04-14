@@ -7,43 +7,15 @@
 int main(int argc, char *argv[])
 {
     // guarda a chave informada pelo usuário
-  char caractere;
-
-  // vamos ler o caractere informado pelo usuário
-  printf("Informe um caractere e tecle ENTER: ");
-  scanf("%c", &caractere);
+  char caractere = (char) argv[1][0];
 
   // vamos verificar se o usuário informou um dígito
   // de 0 a 9
   if(isdigit(caractere))
-    printf("Voce informou um digito de 0 a 9");
-  else
-    printf("Voce NAO informou um digito de 0 a 9");
-
-  puts("\n\n");
-  system("PAUSE");
-  return 0;
-}
+    {printf("Voce informou um digito de 0 a 9");}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-    char *p;
-    long key = strtol(argv[1], &p, 10);
-
-    int isdigit(int key);
-
+    int key = 1;
     // verificar os parâmetros informados
     if (argc > 2)
     {
