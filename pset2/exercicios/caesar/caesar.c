@@ -8,9 +8,12 @@ int main(int argc, char *argv[])
 {
     // guarda a chave informada pelo usuário
     int key = atoi(argv[1]);
-    printf("%d\n", key);
 
-    //int key = 1;
+    if (isdigit(key) ) {
+    printf("é");
+    } else {
+    printf("nao");
+    }
 
     // verificar os parâmetros informados
     if (argc > 2)
