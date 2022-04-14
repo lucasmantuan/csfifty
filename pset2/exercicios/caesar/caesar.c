@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <cs50.h>
 #include <stdlib.h>
+#include <string.h>
 
 int main(void)
 {
@@ -10,8 +11,8 @@ int main(void)
 
     int index = ((((int) plaintext[0] - 97) + key) % 26) + 97;
 
-    string chipertext = "h";
-    chipertext[0] = atoi(index);
+    string chipertext = Array[1];
+    chipertext[0] = "a";
 
     printf("%s\n", chipertext);
 }
