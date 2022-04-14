@@ -8,11 +8,10 @@ int main(int argc, string argv[])
 {
     // guarda a chave informada pelo usuário
     int val;
-    char strn1[] = "12546";
+    string strn1 = argv[1];
 
     val = atoi(strn1);
-    printf("String value = %s\n", strn1);
-    printf("Integer value = %d\n", val);
+    printf("Integer value = %i\n", val);
 
     int key = 1;
 
