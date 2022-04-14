@@ -33,7 +33,8 @@ int main(int argc, char *argv[])
             // ...aplica a fórmula para conversão
             int cipherindex = ((((int) plaintext[i] - 97) + (key - '0')) % 26) + 97;
             printf("%c", (char) cipherindex);
-        } else
+        }
+        else
         {
             printf("%c", plaintext[i]);
         }
