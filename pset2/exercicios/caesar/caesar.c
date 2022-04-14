@@ -11,6 +11,7 @@ int main(void)
     for (int i = 0, n = strlen(plaintext); i < n; i++ )
     {
         int cipherindex = ((((int) plaintext[i] - 97) + key) % 26) + 97;
+        printf("index     : %i\n", cipherindex);
         ciphertext[i] += (char) cipherindex;
     }
 
