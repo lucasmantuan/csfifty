@@ -8,7 +8,7 @@ int main(void)
     int key = 1;
     //int index = (0 + key) % 26;
 
-    int index = (((int) plaintext[0] - 97) + key) % 26;
+    int index = ((((int) plaintext[0] - 97) + key) % 26) + 97;
 
 
 
