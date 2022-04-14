@@ -10,10 +10,13 @@ int main(int argc, string argv[])
     int key = atoi(argv[1]);
 
     // verificar os parâmetros informados
-    if (argc > 2 || isalnum(key) == 0)
+    if (argc > 2)
     {
         return printf("Usage: ./caesar key\n");
     }
+
+    int asd = isalnum(key);
+    printf("%i\n", asd);
 
     // solicita o texto para conversão
     string plaintext = get_string("plaintext: ");
