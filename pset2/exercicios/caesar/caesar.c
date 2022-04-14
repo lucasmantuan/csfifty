@@ -7,7 +7,7 @@ int main(void)
     int key = 1;
     //int index = (0 + key) % 26;
 
-    int ciphertext = atoi(plaintext[0]);
+    int ciphertext = atoi(plaintext);
 
     printf("%c\n", ciphertext);
 }
