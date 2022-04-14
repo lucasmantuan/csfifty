@@ -9,13 +9,8 @@ int main(int argc, char *argv[])
     // guarda a chave informada pelo usuário
 
     char *p;
-    int num;
-    long conv = strtol(argv[1], &p, 10);
-    printf("%li\n", conv);
-
-
-
-    int key = atoi(argv[1]);
+    long key = strtol(argv[1], &p, 10);
+    printf("%li\n", key);
 
     // verificar os parâmetros informados
     if (argc > 2)
