@@ -10,7 +10,7 @@ int main(void)
 
     int index = ((((int) plaintext[0] - 97) + key) % 26) + 97;
 
-
+    string chipertext[0] = (char) index;
 
     printf("%c\n", (char) index);
 }
