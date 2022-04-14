@@ -10,8 +10,8 @@ int main(void)
 
     int index = ((((int) plaintext[0] - 97) + key) % 26) + 97;
 
-    string chipertext = "";
-    chipertext[0] = (char) index;
+    string chipertext = "h";
+    chipertext[0] = atoi(index);
 
     printf("%s\n", chipertext);
 }
