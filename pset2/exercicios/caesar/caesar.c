@@ -11,7 +11,7 @@ int main(int argc, char *argv[])
     char *p;
     int num;
     long conv = strtol(argv[1], &p, 10);
-
+    printf("%li\n", conv);
 
 
 
