@@ -6,6 +6,11 @@
 
 int main(int argc, string argv[])
 {
+    if (argc > 2)
+    {
+        return printf("Usage: ./caesar key\n");
+    }
+
     printf("%i\n", argc);
 
 
