@@ -11,6 +11,8 @@ int atoiN;
 atoiN = atoi(argv[1]);
 printf("atoiN = %d\n", atoiN);
 
+printf("%i\n", isdigit(atoiN));
+
     int key = 1;
 
     // verificar os parâmetros informados
