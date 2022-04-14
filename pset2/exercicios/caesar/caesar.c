@@ -3,5 +3,10 @@
 
 int main(void)
 {
-    String plaintext = get_string()
+    string plaintext = get_string("plaintext: ");
+    int key = 1;
+    string ciphertext;
+
+    ciphertext = (int) plaintext;
+    printf("%i\n", plaintext)
 }
