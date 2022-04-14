@@ -12,5 +12,5 @@ int main(void)
 
 
 
-    printf("%i\n", index);
+    printf("%c\n", (char) index);
 }
