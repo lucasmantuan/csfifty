@@ -16,7 +16,6 @@ int main(int argc, string argv[])
         return printf("Usage: ./caesar key\n");
     }
 
-    int asd = isalnum(key);
     printf("%i\n", z);
 
     // solicita o texto para conversão
