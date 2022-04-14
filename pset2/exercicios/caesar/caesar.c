@@ -6,15 +6,11 @@
 
 int main(int argc, string argv[])
 {
-
-
-    if (argc > 2 ||)
+    // verificar os parâmetros informados
+    if (argc > 2 || isalnum(argv[1]) == 0)
     {
         return printf("Usage: ./caesar key\n");
     }
-
-    printf("%i\n", argc);
-
 
     // guarda a chave informada pelo usuário
     int key = atoi(argv[1]);
