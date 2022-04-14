@@ -10,6 +10,7 @@ int main(void)
 
     int cipherindex = (((int) plaintext[0] - 97) + key) % 26;
     char cipherletter = cipherindex + 97;
+    string chiphertext = (string) cipherletter;
 
-    printf("%c\n", cipherletter);
+    printf("%s\n", ciphertext);
 }
