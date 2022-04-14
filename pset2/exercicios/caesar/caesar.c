@@ -11,7 +11,9 @@ int atoiN;
 atoiN = atoi(argv[1]);
 printf("atoiN = %d\n", atoiN);
 
-printf("%i\n", isdigit(atoiN));
+int asd;
+asd = isdigit(atoiN);
+printf("asdN = %d\n", asd);
 
     int key = 1;
 
