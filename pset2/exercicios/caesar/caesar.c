@@ -4,11 +4,11 @@
 #include <stdlib.h>
 #include <ctype.h>
 
-int main(int argc, string argv[])
+int main(int argc, char argv[])
 {
     // guarda a chave informada pelo usuário
     int val;
-    string strn1 = argv[1];
+    char strn1 = argv[1];
 
     val = atoi(strn1);
     printf("Integer value = %i\n", val);
