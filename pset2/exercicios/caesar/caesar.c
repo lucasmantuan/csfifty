@@ -8,9 +8,9 @@ int main(void)
     int key = 1;
     //int index = (0 + key) % 26;
 
-    int cipherindex = (((int) plaintext[0] - 97) + key) % 26;
-    char cipherletter = cipherindex + 97;
-    string chiphertext = (string) cipherletter;
+    int index = (((int) plaintext[0] - 97) + key) % 26;
 
-    printf("%s\n", ciphertext);
+
+
+    printf("%i\n", index);
 }
