@@ -7,7 +7,6 @@
 int main(int argc, string argv[])
 {
     string key = argv[1];
-    printf("%c\n", key[0]);
 
     // verificar a quantidade de parâmetros informados
     if (argc > 2)
@@ -16,10 +15,12 @@ int main(int argc, string argv[])
     }
 
     // verifica se o parâmetro digitado é um número
-    // for (int i = 0, n = strlen(key); i < n; i++)
-    if (!isdigit(key[0]))
+    for (int i = 0, n = strlen(key); i < n; i++)
     {
-        return printf("Usage: ./caesar key\n");
+        if (!isdigit(key[i]))
+        {
+            return printf("Usage: ./caesar key\n");
+        }
     }
 
     // solicita o texto para conversão
