@@ -34,8 +34,16 @@ int main(int argc, string argv[])
         if (isalpha(plaintext[i]))
         {
             // ...aplica a fórmula para conversão
-            int cipherindex = ((((int) plaintext[i] - 97) + atoi(key)) % 26) + 97;
+            if (islower(plaintext[i]))
+            {
+            int cipherindex = ((((int) plaintext[i] - 65) + atoi(key)) % 26) + 65;
             printf("%c", (char) cipherindex);
+            }
+            else
+            {
+                int cipherindex = ((((int) plaintext[i] - 97) + atoi(key)) % 26) + 97;
+                printf("%c", (char) cipherindex);
+            }
         }
         else
         {
