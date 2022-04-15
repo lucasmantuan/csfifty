@@ -7,7 +7,7 @@
 int main(int argc, string argv[])
 {
     string key = argv[1];
-    printf("%s\n", key);
+    printf("%c\n", key[0]);
 
     // verificar a quantidade de parâmetros informados
     if (argc > 2)
@@ -16,7 +16,8 @@ int main(int argc, string argv[])
     }
 
     // verifica se o parâmetro digitado é um número
-    if (isalpha(key))
+    // for (int i = 0, n = strlen(key); i < n; i++)
+    if (isdigit(key[0]))
     {
         return printf("Usage: ./caesar key\n");
     }
