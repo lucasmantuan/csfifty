@@ -16,7 +16,7 @@ int main(int argc, string argv[])
     }
 
     // verifica se o parâmetro digitado é um número
-    if (!isdigit(atoi(key)))
+    if (isalpha(key))
     {
         return printf("Usage: ./caesar key\n");
     }
