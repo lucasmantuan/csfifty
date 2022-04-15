@@ -6,7 +6,8 @@
 
 int main(int argc, char *argv[])
 {
-    char key = argv[1][0];
+    char key = argv[1];
+    printf("%c\n", key);
 
     // verificar a quantidade de parâmetros informados
     if (argc > 2)
