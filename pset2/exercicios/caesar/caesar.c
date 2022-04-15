@@ -17,7 +17,7 @@ int main(int argc, string argv[])
 
     // verifica se o parâmetro digitado é um número
     // for (int i = 0, n = strlen(key); i < n; i++)
-    if (isdigit(key[0]))
+    if (!isdigit(key[0]))
     {
         return printf("Usage: ./caesar key\n");
     }
