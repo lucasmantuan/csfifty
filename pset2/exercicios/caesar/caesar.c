@@ -11,7 +11,8 @@ int main(int argc, string argv[])
     // verificar a quantidade de parâmetros informados
     if (argc > 2 || argc == 1)
     {
-        return printf("Usage: ./caesar key\n");
+        printf("Usage: ./caesar key\n");
+        return 1;
     }
 
     // verifica se o parâmetro digitado é um número
@@ -19,7 +20,8 @@ int main(int argc, string argv[])
     {
         if (!isdigit(key[i]))
         {
-            return printf("Usage: ./caesar key\n");
+            printf("Usage: ./caesar key\n");
+            return 1;
         }
     }
 
