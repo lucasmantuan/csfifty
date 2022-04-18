@@ -6,7 +6,7 @@ int main(void)
 {
     string str = "lacas";
 
-   // str[1] = 'b';
+    str[1] = 'b';
 
     printf("%c\n", str[1]);
 }
