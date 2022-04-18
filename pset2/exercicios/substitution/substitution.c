@@ -1,13 +1,15 @@
 #include <stdio.h>
 #include <cs50.h>
-#include <strings.h>
+#include <string.h>
 
 int main(void)
 {
-    string text = "AAA";
-    string key = "B";
+    string str = "BAC";
+    char ch = 'A';
+    char ret;
 
-    char t = strchr(text, "A");
-    printf("%c\n", t);
+    ret = strchr(str, ch);
+
+    printf("%s\n", ret);
 
 }
