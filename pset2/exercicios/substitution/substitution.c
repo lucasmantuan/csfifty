@@ -5,12 +5,8 @@
 int main(void)
 {
     string str = "lacas";
-    char ch = 'b';
 
-    if (str[1] == 'a')
-    {
-        str[1] = 'b';
-    }
+   // str[1] = 'b';
 
-    printf("%s", str);
+    printf("%s", str[1]);
 }
