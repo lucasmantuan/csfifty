@@ -4,8 +4,8 @@
 
 int main(void)
 {
-    string str = "lucas";
-    char ch = 'l';
+    string str = "lacas";
+    char ch = 'a';
     char *ret;
     int i = 1;
 
