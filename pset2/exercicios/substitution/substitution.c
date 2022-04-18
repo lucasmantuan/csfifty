@@ -11,6 +11,6 @@ int main(void)
 
     ret = strchr(str, ch);
 
-    printf("%s\n", ret);
+    printf("%d\n", (ret - str + 1));
 
 }
