@@ -4,13 +4,13 @@
 
 int main(void)
 {
-    char str[] = "lucas";
+    string str = "lucas";
     char ch = 'a';
     char *ret;
     int i = 1;
 
     ret = strchr(str, ch);
 
-    printf("%ld\n", (ret - str + 1));
+    printf("%ld\n", (ret - str));
 
 }
