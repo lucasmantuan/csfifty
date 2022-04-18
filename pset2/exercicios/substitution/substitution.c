@@ -4,9 +4,9 @@
 
 int main(void)
 {
-    string str = "BAC";
-    char ch = 'A';
-    char ret;
+    char str[] = "lucas";
+    char ch = 'a';
+    char *ret;
 
     ret = strchr(str, ch);
 
