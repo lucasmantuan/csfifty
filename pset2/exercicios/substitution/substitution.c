@@ -7,6 +7,7 @@ int main(void)
     char str[] = "lucas";
     char ch = 'a';
     char *ret;
+    int i = 1;
 
     ret = strchr(str, ch);
 
