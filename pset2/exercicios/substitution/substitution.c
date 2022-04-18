@@ -5,12 +5,12 @@
 int main(void)
 {
     string str = "lacas";
-    char ch = 'a';
+    char ch = 'b';
     char *ret;
-    int i = 1;
 
-    ret = strchr(str, ch);
-
-    printf("%ld\n", (ret - str));
+    if (str[0] == 'a')
+    {
+        
+    }
 
 }
