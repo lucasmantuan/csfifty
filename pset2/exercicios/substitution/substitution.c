@@ -5,12 +5,12 @@
 int main(void)
 {
     string str = "lucas";
-    char ch = 'a';
+    char ch = 'l';
     char *ret;
     int i = 1;
 
     ret = strchr(str, ch);
 
-    printf("%ld\n", (ret - str));
+    printf("%ld\n", (ret - str + 1));
 
 }
