@@ -8,5 +8,5 @@ int main(void)
 
    // str[1] = 'b';
 
-    printf("%s", str[1]);
+    printf("%c\n", str[1]);
 }
