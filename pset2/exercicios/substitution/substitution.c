@@ -4,9 +4,9 @@
 
 int main(void)
 {
-    string str = "lacas";
+    char str[] = "lacas";
 
     str[1] = 'b';
 
-    printf("%c\n", str[1]);
+    printf("%s\n", str);
 }
