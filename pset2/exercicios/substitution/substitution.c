@@ -4,9 +4,10 @@
 
 int main(void)
 {
-    string plaintext = "ABC";
-    string key = "BCD";
+    string text = "AAA";
+    string key = "B";
 
-    plaintext[0] = 
+    char t = strchr(text, "A");
+    printf("%c\n", t);
 
 }
