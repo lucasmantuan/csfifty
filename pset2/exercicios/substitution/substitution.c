@@ -19,7 +19,7 @@ int main(void)
             }
             else
             {
-                ciphertext[i] = 0;
+                ciphertext[i] = 32;
             }
 
         //}
