@@ -4,12 +4,12 @@
 
 int main(void)
 {
-    string key = "abcdefghijklmnopqrstuvwxyz";
+    string key = "bcdefghijklmnopqrstuvwxyza";
     string plaintext = get_string("Plaintext: ");
     char ciphertext[strlen(plaintext)];
     int character = 97;
 
-    for (int j = 0; j < 23; j++)
+    for (int j = 0; j < 26; j++)
     {
         for (int i = 0, n = strlen(plaintext); i < n; i++)
         {
