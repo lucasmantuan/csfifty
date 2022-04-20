@@ -11,7 +11,7 @@ int main(void)
 
     for (int i = 0, n = strlen(plaintext); i < n; i++)
     {
-        //for (int j = 0; j < 23; j++)
+        for (int j = 0; j < 23; j++)
         //{
             if (plaintext[i] == character)
             {
