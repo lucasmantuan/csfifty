@@ -9,16 +9,16 @@ int main(void)
     char ciphertext[strlen(plaintext)];
     int character = 97;
 
-    for (int i = 0, n = strlen(plaintext); i < n; i++)
+    for (int j = 0; j < 23; j++)
     {
-        if (plaintext[i] == character)
+        for (int i = 0, n = strlen(plaintext); i < n; i++)
         {
-            ciphertext[i] = key[0];
+            if (plaintext[i] == character)
+            {
+                ciphertext[i] = key[j];
+            }
         }
-        else
-        {
-            ciphertext[i] = 32;
-        }
+    character++;
     }
 
     printf("%s\n", ciphertext);
