@@ -19,7 +19,7 @@ int main(void)
             }
             else
             {
-                ciphertext[i] = 'z';
+                ciphertext[i] = 0;
             }
 
         //}
