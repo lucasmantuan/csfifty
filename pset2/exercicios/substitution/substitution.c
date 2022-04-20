@@ -6,7 +6,5 @@ int main(void)
 {
     string plaintext = get_string("String: ");
 
-    str[1] = 'b';
-
-    printf("%s\n", str);
+    printf("%s\n", plaintext);
 }
