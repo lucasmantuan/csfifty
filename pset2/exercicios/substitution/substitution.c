@@ -11,9 +11,9 @@ int main(void)
 
     for (int i = 0, n = strlen(plaintext); i < n; i++)
     {
-        if (plaintext[0] == character)
+        if (plaintext[i] == character)
         {
-            ciphertext[0] = key[0];
+            ciphertext[i] = key[0];
         }
     }
 
