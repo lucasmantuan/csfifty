@@ -3,6 +3,7 @@
         "*.js": "javascript",
         "*.jsx": "javascriptreact",
         "random": "c",
-        "cs50.h": "c"
+        "cs50.h": "c",
+        "sstream": "c"
     }
 }

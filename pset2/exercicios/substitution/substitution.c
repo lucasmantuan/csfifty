@@ -5,12 +5,13 @@
 int main(void)
 {
     string plaintext = get_string("Plaintext: ");
-    string key = "wxy"
-    string ciphertext[str]
+    string key = "wxy";
+    string ciphertext[strlen(plaintext)];
 
     if (plaintext[0] == 'a')
     {
-        printf("%c\n", plaintext[0]);
+        ciphertext[0] = key[0];
+        printf("%c\n", ciphertext[0]);
     }
 
     printf("%s\n", plaintext);
