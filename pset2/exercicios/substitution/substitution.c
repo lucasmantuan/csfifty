@@ -11,9 +11,12 @@ int main(void)
 
     for (int i = 0, n = strlen(plaintext); i < n; i++)
     {
-        if (plaintext[i] == character)
+        for (int j = 0; j < 23; j++)
         {
-            ciphertext[i] = key[0];
+            if (plaintext[i] == character)
+            {
+                ciphertext[i] = key[0];
+            }
         }
     }
 
