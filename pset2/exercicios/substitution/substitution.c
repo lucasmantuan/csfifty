@@ -4,7 +4,7 @@
 
 int main(void)
 {
-    char str[] = "lacas";
+    char str[] = get_char("String: ");
 
     str[1] = 'b';
 
