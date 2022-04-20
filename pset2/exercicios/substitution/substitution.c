@@ -12,7 +12,7 @@ int main(void)
     for (int i = 0, n = strlen(plaintext); i < n; i++)
     {
         for (int j = 0; j < 23; j++)
-        //{
+        {
             if (plaintext[i] == character)
             {
                 ciphertext[i] = key[1];
@@ -21,8 +21,8 @@ int main(void)
             {
                 ciphertext[i] = 32;
             }
-
-        //}
+            character++;
+        }
     }
 
     printf("%s\n", ciphertext);
