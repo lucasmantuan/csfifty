@@ -15,7 +15,7 @@ int main(void)
         {
             if (plaintext[i] == character)
             {
-                ciphertext[i] = key[1];
+                ciphertext[i] = key[j];
             }
             else
             {
