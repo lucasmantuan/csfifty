@@ -6,7 +6,7 @@ int main(void)
 {
     string plaintext = get_string("Plaintext: ");
     string key = "wxy";
-    string ciphertext[strlen(plaintext)];
+    char ciphertext[strlen(plaintext)];
 
     if (plaintext[0] == 'a')
     {
