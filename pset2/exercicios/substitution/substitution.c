@@ -4,7 +4,7 @@
 
 int main(void)
 {
-    string key = "bcdefghijklmnopqrswxyza";
+    string key = "abcdefghijklmnopqrstuvwxyz";
     string plaintext = get_string("Plaintext: ");
     char ciphertext[strlen(plaintext)];
     int character = 97;
