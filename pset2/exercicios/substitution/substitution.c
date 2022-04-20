@@ -8,9 +8,12 @@ int main(void)
     string plaintext = get_string("Plaintext: ");
     char ciphertext[strlen(plaintext)];
 
-    if (plaintext[0] == (char) 65)
+    for (int i = 0, n = strlen(plaintext); i < n; i++)
     {
-        ciphertext[0] = key[0];
+        if (plaintext[i] == 97)
+        {
+            ciphertext[i] = key[i];
+        }
     }
 
     printf("%s\n", ciphertext);
