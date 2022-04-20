@@ -7,12 +7,16 @@ int main(void)
     string key = "wxy";
     string plaintext = get_string("Plaintext: ");
     char ciphertext[strlen(plaintext)];
+    int character = 97;
 
     for (int i = 0, n = strlen(plaintext); i < n; i++)
     {
-        if (plaintext[i] == 97)
+        for (int j = 0; j < 26; j++)
         {
-            ciphertext[i] = key[i];
+            if (plaintext[i] == character)
+            {
+                ciphertext[i] = key[i];
+            }
         }
     }
 
