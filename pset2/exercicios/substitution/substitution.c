@@ -4,7 +4,7 @@
 
 int main(void)
 {
-    char str[] = get_char("String: ");
+    string plaintext = get_string("String: ");
 
     str[1] = 'b';
 
