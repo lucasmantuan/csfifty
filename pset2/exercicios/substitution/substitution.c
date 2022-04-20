@@ -17,6 +17,11 @@ int main(void)
             {
                 ciphertext[i] = key[1];
             }
+            else
+            {
+                ciphertext[i] = 'z';
+            }
+
         //}
     }
 
