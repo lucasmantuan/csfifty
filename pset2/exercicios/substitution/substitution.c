@@ -21,5 +21,5 @@ int main(void)
     character++;
     }
 
-    printf("%s\n", ciphertext);
+    printf("Ciphertext: %s\n", ciphertext);
 }
