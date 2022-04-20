@@ -4,19 +4,20 @@
 
 int main(void)
 {
-    string key = "wxy";
+    string key = "bcdefghijklmnopqrswxyza";
     string plaintext = get_string("Plaintext: ");
     char ciphertext[strlen(plaintext)];
     int character = 97;
 
     for (int i = 0, n = strlen(plaintext); i < n; i++)
     {
-        for (int j = 0; j < 26; j++)
+        for (int j = 0; j < 23; j++)
         {
             if (plaintext[i] == character)
             {
-                ciphertext[i] = key[i];
+                ciphertext[i] = key[j];
             }
+            character++;
         }
     }
 
