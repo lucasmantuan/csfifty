@@ -24,9 +24,10 @@ int main(void)
         // cada uma das letras de plaintext...
         for (int i = 0, n = strlen(plaintext); i < n; i++)
         {
-            // 
+            // verificando qual é a letra...
             if (plaintext[i] == character)
             {
+                // e fazendo a substituição apropriada.
                 ciphertext[i] = key[j];
             }
         }
