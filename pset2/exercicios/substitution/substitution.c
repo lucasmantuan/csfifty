@@ -21,9 +21,13 @@ int main(void)
             if (isalpha(plaintext[i]))
             {
 
-                if ()
+                if (isupper(plaintext[i]))
                 {
-                    
+                    printf("upper\n");
+                }
+                else
+                {
+                    printf("lower\n");
                 }
 
                 // e depois verificando qual é a letra...
