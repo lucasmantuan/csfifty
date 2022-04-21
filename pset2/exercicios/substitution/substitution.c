@@ -21,6 +21,11 @@ int main(void)
             if (isalpha(plaintext[i]))
             {
 
+                if ()
+                {
+                    
+                }
+
                 // e depois verificando qual é a letra...
                 if (plaintext[i] == character)
                 {
