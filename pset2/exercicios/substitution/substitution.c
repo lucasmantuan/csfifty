@@ -29,10 +29,8 @@ int main(void)
                         {
                             // e fazer a substituição apropriada se for uma letra...
                             ciphertext[i] = key[j];
-                            t
+                            toupper(ciphertext[i]);
                         }
-
-
                 }
                 else
                 {
