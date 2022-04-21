@@ -21,21 +21,21 @@ int main(void)
             if (isalpha(plaintext[i]))
             {
                 // depois verificando se é maiuscula
-                if (isupper(plaintext[i]))
-                {
-                    plaintext[i] = tolower(plaintext[i]);
+                //if (isupper(plaintext[i]))
+                //{
+                    //plaintext[i] = tolower(plaintext[i]);
                     // para então verificar qual é a letra...
                     if (plaintext[i] == character)
                     {
                         // e fazer a substituição apropriada se for uma letra...
                         ciphertext[i] = key[j];
-                        ciphertext[i] = toupper(ciphertext[i]);
+                        //ciphertext[i] = toupper(ciphertext[i]);
                     }
-                }
-                else
-                {
+                //}
+                //else
+                //{
                     //printf("min\n");
-                }
+                //}
 
             }
             else
