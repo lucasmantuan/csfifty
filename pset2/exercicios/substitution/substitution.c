@@ -32,9 +32,11 @@ int main(void)
                 }
                 else
                 {
-                    printf("lower\n");
+                    if (plaintext[i] == character)
+                    {
+                        ciphertext[i] = key[j];
+                    }
                 }
-
             }
             else
             {
