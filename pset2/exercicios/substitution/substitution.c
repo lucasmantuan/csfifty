@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <cs50.h>
 #include <string.h>
+#include <ctype.h>
 
 int main(void)
 {
@@ -16,29 +17,23 @@ int main(void)
         for (int i = 0, n = strlen(plaintext); i < n; i++)
         {
 
+            // primeiro verificando se é uma letra...
             if (isalpha(plaintext[i]))
             {
+
+                // e depois verificando qual é a letra...
+                if (plaintext[i] == character)
+                {
+                    // para então fazer a substituição apropriada.
+                    ciphertext[i] = key[j];
+                }
 
             }
             else
             {
-
+                ciphertext[i] = plaintext[i];
             }
 
-
-
-
-
-
-
-
-
-            // verificando qual é a letra...
-            if (plaintext[i] == character)
-            {
-                // e fazendo a substituição apropriada.
-                ciphertext[i] = key[j];
-            }
         }
 
     character++;
