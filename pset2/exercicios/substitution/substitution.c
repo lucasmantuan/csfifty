@@ -23,13 +23,13 @@ int main(void)
                 // depois verificando se é maiuscula ou minuscula
                 if (isupper(plaintext[i]))
                 {
-                    tolower(plaintext[i]);
+                    plaintext[i] = tolower(plaintext[i]);
                         // para então verificar qual é a letra...
                         if (plaintext[i] == character)
                         {
                             // e fazer a substituição apropriada se for uma letra...
                             ciphertext[i] = key[j];
-                            toupper(ciphertext[i]);
+                            ciphertext[i] = toupper(ciphertext[i]);
                         }
                 }
                 else
