@@ -26,10 +26,8 @@ int main(void)
                     // para então verificar qual é a letra...
                     if (tolower(plaintext[i]) == character)
                     {
-                        printf("%c\n", plaintext[i]);
                         // e fazer a substituição apropriada se for uma letra...
-                        //ciphertext[i] = key[j];
-                        //ciphertext[i] = toupper(ciphertext[i]);
+                        ciphertext[i] = toupper(key[j]);
                     }
                 }
                 else
