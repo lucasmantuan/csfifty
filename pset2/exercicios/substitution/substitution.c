@@ -34,7 +34,9 @@ int main(void)
                 }
                 else
                 {
-                    printf("lower\n");
+
+
+
                 }
 
             }
