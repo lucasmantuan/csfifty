@@ -5,7 +5,7 @@
 
 int main(void)
 {
-    string key = "bcdefghijklmnopqrstuvwxyza";
+    string key = "VCHPRZGJNTLSKFBDQWAXEUYMOI";
     string plaintext = get_string("Plaintext: ");
     char ciphertext[strlen(plaintext)];
     int character = 97;
@@ -24,13 +24,14 @@ int main(void)
                 // e depois verificando qual é a letra...
                 if (plaintext[i] == character)
                 {
-                    // para então fazer a substituição apropriada.
+                    // para então fazer a substituição apropriada se for uma letra...
                     ciphertext[i] = key[j];
                 }
 
             }
             else
             {
+                // ou então manter o caractere.
                 ciphertext[i] = plaintext[i];
             }
 
