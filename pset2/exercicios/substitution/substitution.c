@@ -33,4 +33,5 @@ int qual_letra(char n)
         }
         character++;
     }
+    return 0;
 }
