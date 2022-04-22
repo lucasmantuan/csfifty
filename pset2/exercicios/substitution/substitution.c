@@ -12,13 +12,14 @@ int main(void)
     int size = strlen(plaintext);
     char ciphertext[size];
 
+    // substitui a letra informada pela sua correspondente cifrada
     for (int i = 0; i < size; i++)
     {
         int j = index(plaintext[i]);
         ciphertext[i] = key[j];
     }
 
-    printf("%s\n", ciphertext);
+    printf("ciphertext: %s\n", ciphertext);
     return 0;
 }
 
