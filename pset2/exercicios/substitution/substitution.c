@@ -29,6 +29,8 @@ int main(int argc, string argv[])
 
     for (int i = 0; i < size; i++)
     {
+        int j = index(tolower(plaintext[i]));
+
         // verifica se é uma letra
         if (isalpha(plaintext[i]))
         {
@@ -36,13 +38,11 @@ int main(int argc, string argv[])
             if (isupper(plaintext[i]))
             {
                 // substitui a letra e converte para maiuscula
-                int j = index(tolower(plaintext[i]));
                 ciphertext[i] = toupper(key[j]);
             }
             else
             {
                 // substitui a letra mas não converte para maiuscula
-                int j = index(plaintext[i]);
                 ciphertext[i] = tolower(key[j]);
             }
         }
@@ -53,7 +53,7 @@ int main(int argc, string argv[])
         }
     }
 
-    printf("ciphertext: %s\n", ciphertext);
+    //printf("ciphertext: %s\n", ciphertext);
 
     // printf("ciphertext: ");
     // for (int i = 0; i < size; i++)
