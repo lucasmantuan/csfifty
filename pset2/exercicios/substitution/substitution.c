@@ -33,6 +33,11 @@ int main(int argc, string argv[])
         for (int i = 0, n = strlen(plaintext); i < n; i++)
         {
 
+            if (isspace(plaintext[i]))
+            {
+                printf("ESPAÇO\n");
+            }
+
             // primeiro verificando se é uma letra...
             if (isalpha(plaintext[i]))
             {
