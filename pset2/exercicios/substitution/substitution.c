@@ -46,7 +46,6 @@ int main(int argc, string argv[])
                     {
                         // e fazer a substituição apropriada se for uma letra...
                         ciphertext[i] = toupper(key[j]);
-                        printf("%c\n", key[j]);
                     }
                 }
                 // entretanto se for minuscula, não faz sua conversão ...
