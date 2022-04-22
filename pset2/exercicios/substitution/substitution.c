@@ -62,10 +62,10 @@ int main(int argc, string argv[])
                 // ou então manter o caractere.
                 ciphertext[i] = plaintext[i];
             }
-            getchar;
-            break;
-        }
 
+        }
+        getchar;
+        break;
     }
 
     printf("ciphertext: %s\n", ciphertext);
