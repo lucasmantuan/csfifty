@@ -5,9 +5,9 @@
 
 int main(int argc, string argv[])
 {
-    string key = "vchprzgjntlskfbdqwaxeuymoi";
+    string key = argv[1];
 
-    if (argc > 2 || argc == 1)
+    if (argc != 2)
     {
         printf("Usage: ./caesar key\n");
         return 1;
