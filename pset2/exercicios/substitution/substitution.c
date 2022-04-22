@@ -3,7 +3,7 @@
 #include <string.h>
 #include <ctype.h>
 
-int qual_letra(int n);
+int index(int n);
 
 int main(void)
 {
@@ -15,7 +15,9 @@ int main(void)
 
     for (int i = 0; i < size; i++)
     {
-        printf("%i\n", qual_letra(plaintext[i]));
+        int j = index(plaintext[i]);
+
+        printf("%c\n", key[j]);
     }
 
 
@@ -25,7 +27,7 @@ int main(void)
 }
 
 // retorna o índice da letra recebida como parâmetro
-int qual_letra(int n)
+int index(int n)
 {
     int character = 97;
     for (int i = 0; i < 26; i++)
