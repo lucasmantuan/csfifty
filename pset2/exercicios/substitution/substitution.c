@@ -62,7 +62,7 @@ int main(int argc, string argv[])
                 // ou então manter o caractere.
                 ciphertext[i] = plaintext[i];
             }
-            getchar ciphertext;
+            getchar;
             break;
         }
 
