@@ -23,14 +23,6 @@ int main(int argc, string argv[])
 
     string plaintext = get_string("plaintext: ");
     char ciphertext[strlen(plaintext)];
-
-    for (int i = 0;)
-    {
-
-    }
-
-
-
     int character = 97;
 
     // percorre 26 vezes
@@ -39,6 +31,9 @@ int main(int argc, string argv[])
         // cada uma das letras de plaintext...
         for (int i = 0, n = strlen(plaintext); i < n; i++)
         {
+            // preenche o array com valores nulos
+            ciphertex[i] = null;
+
             // primeiro verificando se é uma letra...
             if (isalpha(plaintext[i]))
             {
