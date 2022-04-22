@@ -53,14 +53,12 @@ int main(int argc, string argv[])
         }
     }
 
-    //printf("ciphertext: %s\n", ciphertext);
-
-    // printf("ciphertext: ");
-    // for (int i = 0; i < size; i++)
-    // {
-    //     printf("%c", ciphertext[i]);
-    // }
-    // printf("\n");
+    printf("ciphertext: ");
+    for (int i = 0; i < size; i++)
+    {
+        printf("%c", ciphertext[i]);
+    }
+    printf("\n");
 
     return 0;
 }
