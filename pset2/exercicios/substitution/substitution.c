@@ -23,7 +23,7 @@ int main(int argc, string argv[])
 
     string plaintext = get_string("plaintext: ");
     int q = strlen(plaintext);
-    char ciphertext[1];
+    char ciphertext[q];
     int character = 97;
 
     printf("%i\n", q);
