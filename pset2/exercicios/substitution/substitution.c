@@ -20,6 +20,10 @@ int main(void)
             int j = index(plaintext[i]);
             ciphertext[i] = key[j];
         }
+        else
+        {
+            ciphertext[i] = plaintext[i];
+        }
     }
 
     printf("ciphertext: %s\n", ciphertext);
