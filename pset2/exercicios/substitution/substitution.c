@@ -24,7 +24,6 @@ int main(int argc, string argv[])
 
     string plaintext = get_string("plaintext: ");
     char ciphertext[strlen(plaintext)];
-
     int character = 97;
 
     // percorre 26 vezes
