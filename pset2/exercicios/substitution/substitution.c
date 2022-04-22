@@ -5,9 +5,24 @@
 
 int index(int n);
 
-int main(void)
+int main(int argc, string argv[])
 {
-    string key = "VcHpRzGjNtLsKfBdQwAxEuYmOi";
+    string key = argv[1];
+
+    // verifica a quantidade de argumentos
+    if (argc != 2)
+    {
+        printf("Uso: ./substitution chave\n");
+        return 1;
+    }
+
+    // verifica a quantidade de caracteres da chave
+    if (strlen(key) != 26)
+    {
+        printf("A chave deve conter 26 caracteres.\n");
+        return 1;
+    }
+
     string plaintext = get_string("plaintext: ");
     int size = strlen(plaintext);
     char ciphertext[size];
@@ -39,6 +54,14 @@ int main(void)
     }
 
     printf("ciphertext: %s\n", ciphertext);
+
+    // printf("ciphertext: ");
+    // for (int i = 0; i < size; i++)
+    // {
+    //     printf("%c", ciphertext[i]);
+    // }
+    // printf("\n");
+
     return 0;
 }
 
