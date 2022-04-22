@@ -32,7 +32,7 @@ int main(int argc, string argv[])
         for (int i = 0, n = strlen(plaintext); i < n; i++)
         {
             // preenche o array com valores nulos
-            ciphertex[i] = null;
+            ciphertext[i] = null;
 
             // primeiro verificando se é uma letra...
             if (isalpha(plaintext[i]))
