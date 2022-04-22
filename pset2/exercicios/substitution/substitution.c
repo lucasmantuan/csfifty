@@ -63,6 +63,7 @@ int main(int argc, string argv[])
                 ciphertext[i] = plaintext[i];
             }
             getchar ciphertext;
+            break;
         }
 
     }
