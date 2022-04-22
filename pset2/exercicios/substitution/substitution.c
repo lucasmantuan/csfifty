@@ -3,9 +3,15 @@
 #include <string.h>
 #include <ctype.h>
 
-int main(void)
+int main(int argc, string argv[])
 {
     string key = "vchprzgjntlskfbdqwaxeuymoi";
+
+    if (argc > 2 || argc == 1)
+    {
+        printf("Usage: ./caesar key\n");
+        return 1;
+    }
 
     if (strlen(key) != 26)
     {
@@ -59,4 +65,5 @@ int main(void)
     }
 
     printf("Ciphertext: %s\n", ciphertext);
+    return 0;
 }
