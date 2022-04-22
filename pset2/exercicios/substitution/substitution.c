@@ -22,8 +22,11 @@ int main(int argc, string argv[])
     }
 
     string plaintext = get_string("plaintext: ");
-    char ciphertext[strlen(plaintext)];
+    strlen(plaintext)
+    char ciphertext[10];
     int character = 97;
+
+    printf("%s\n", ciphertext);
 
     // percorre 26 vezes
     for (int j = 0; j < 26; j++)
