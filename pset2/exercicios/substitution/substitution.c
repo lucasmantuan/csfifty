@@ -32,6 +32,7 @@ int main(int argc, string argv[])
         // cada uma das letras de plaintext...
         for (int i = 0; i < size; i++)
         {
+            printf("%i ", i);
             // primeiro verificando se é uma letra...
             if (isalpha(plaintext[i]))
             {
