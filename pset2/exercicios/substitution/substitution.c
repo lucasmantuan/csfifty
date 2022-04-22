@@ -64,7 +64,7 @@ int main(int argc, string argv[])
         }
     }
 
-    printf("%s\n", ciphertext");
+    printf("%s\n", ciphertext);
 
     printf("ciphertext: ");
     for (int i = 0; i < size; i++)
