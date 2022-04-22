@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
 #include <cs50.h>
 #include <string.h>
 #include <ctype.h>
@@ -36,7 +35,7 @@ int main(int argc, string argv[])
             if (isalpha(plaintext[i]))
             {
 
-                printf("%c\n", plaintext[i]);
+                printf("%i\n", isalpha(plaintext[i]));
 
                 // depois verificando se é maiuscula e fazendo sua conversão...
                 if (isupper(plaintext[i]))
