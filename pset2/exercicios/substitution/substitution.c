@@ -27,16 +27,11 @@ int main(int argc, string argv[])
     int character = 97;
 
     // percorre 26 vezes
-    for (int j = 0; j < 26; j++)
-    {
+    // for (int j = 0; j < 26; j++)
+    // {
         // cada uma das letras de plaintext...
         for (int i = 0, n = strlen(plaintext); i < n; i++)
         {
-
-            if (isspace(plaintext[i]))
-            {
-                printf("ESPAÇO\n");
-            }
 
             // primeiro verificando se é uma letra...
             if (isalpha(plaintext[i]))
@@ -68,7 +63,7 @@ int main(int argc, string argv[])
             }
             character++;
         }
-    }
+    // }
 
     printf("ciphertext: %s\n", ciphertext);
     return 0;
