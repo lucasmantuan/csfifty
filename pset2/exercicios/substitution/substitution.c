@@ -29,6 +29,8 @@ int main(int argc, string argv[])
     // percorre 26 vezes
     for (int j = 0; j < 26; j++)
     {
+    printf("%i\n", j);
+
         // cada uma das letras de plaintext...
         for (int i = 0, n = strlen(plaintext); i < n; i++)
         {
