@@ -21,7 +21,7 @@ int main(int argc, string argv[])
         return 1;
     }
 
-    string plaintext = get_string("Plaintext: ");
+    string plaintext = get_string("plaintext: ");
     char ciphertext[strlen(plaintext)];
     int character = 97;
 
@@ -66,6 +66,6 @@ int main(int argc, string argv[])
         character++;
     }
 
-    printf("Ciphertext: %s\n", ciphertext);
+    printf("ciphertext: %s\n", ciphertext);
     return 0;
 }
