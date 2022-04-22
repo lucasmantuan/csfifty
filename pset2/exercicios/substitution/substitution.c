@@ -44,6 +44,7 @@ int main(int argc, string argv[])
                     {
                         // e fazer a substituição apropriada se for uma letra...
                         ciphertext[i] = toupper(key[0]);
+                        break;
                     }
                 }
                 // entretanto se for minuscula, não faz sua conversão ...
@@ -53,6 +54,7 @@ int main(int argc, string argv[])
                     if (plaintext[i] == character)
                     {
                         ciphertext[i] = tolower(key[0]);
+                        break;
                     }
                 }
             }
