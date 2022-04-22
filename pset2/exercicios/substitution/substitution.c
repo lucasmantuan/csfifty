@@ -12,16 +12,30 @@ int main(void)
     int size = strlen(plaintext);
     char ciphertext[size];
 
-    // substitui a letra informada pela sua correspondente cifrada
     for (int i = 0; i < size; i++)
     {
+        // verifica se é uma letra
         if (isalpha(plaintext[i]))
         {
-            int j = index(plaintext[i]);
-            ciphertext[i] = key[j];
+            // verifica se é maiuscula
+            if (isupper(plaintext[i]))
+            {
+                if (tolower(plaintext[i]) == character)
+                {
+                    
+                }
+                // substitui a letra informada por sua correspondente cifrada
+                int j = index(plaintext[i]);
+                ciphertext[i] = key[j];
+            }
+            else
+            {
+
+            }
         }
         else
         {
+            // por não ser uma letra não faz a substituição
             ciphertext[i] = plaintext[i];
         }
     }
