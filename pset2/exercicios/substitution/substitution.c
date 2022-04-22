@@ -7,12 +7,14 @@ int main(int argc, string argv[])
 {
     string key = argv[1];
 
+    // verifica a quantidade de argumentos
     if (argc != 2)
     {
         printf("Uso: ./substitution chave\n");
         return 1;
     }
 
+    // verifica os caractres da chave
     if (strlen(key) != 26)
     {
         printf("A chave deve conter 26 caracteres.\n");
