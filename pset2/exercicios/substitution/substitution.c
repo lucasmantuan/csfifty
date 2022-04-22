@@ -9,21 +9,17 @@ int main(void)
 {
     string key = "VcHpRzGjNtLsKfBdQwAxEuYmOi";
     string plaintext = get_string("plaintext: ");
-
     int size = strlen(plaintext);
-    //char ciphertext[size];
+    char ciphertext[size];
 
     for (int i = 0; i < size; i++)
     {
         int j = index(plaintext[i]);
-
-        printf("%c\n", key[j]);
+        ciphertext[i] = key[j];
     }
 
-
-
-    // printf("%s\n", ciphertext);
-    // return 0;
+    printf("%s\n", ciphertext);
+    return 0;
 }
 
 // retorna o índice da letra recebida como parâmetro
