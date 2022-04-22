@@ -23,7 +23,7 @@ int main(void)
     return 0;
 }
 
-// retorna o índice da letra recebida como parâmetro
+// retorna o índice da letra recebida
 int index(int n)
 {
     int character = 97;
