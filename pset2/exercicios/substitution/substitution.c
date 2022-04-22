@@ -27,10 +27,8 @@ int main(int argc, string argv[])
     int character = 97;
 
     // percorre 26 vezes
-    for (int j = 0; j < 26; j++)
-    {
-    printf("%i\n", j);
-
+    // for (int j = 0; j < 26; j++)
+    // {
         // cada uma das letras de plaintext...
         for (int i = 0, n = strlen(plaintext); i < n; i++)
         {
@@ -44,7 +42,7 @@ int main(int argc, string argv[])
                     if (tolower(plaintext[i]) == character)
                     {
                         // e fazer a substituição apropriada se for uma letra...
-                        ciphertext[i] = toupper(key[j]);
+                        ciphertext[i] = toupper(key[0]);
                     }
                 }
                 // entretanto se for minuscula, não faz sua conversão ...
@@ -53,7 +51,7 @@ int main(int argc, string argv[])
                     //
                     if (plaintext[i] == character)
                     {
-                        ciphertext[i] = tolower(key[j]);
+                        ciphertext[i] = tolower(key[0]);
                     }
                 }
             }
@@ -64,7 +62,7 @@ int main(int argc, string argv[])
             }
             character++;
         }
-    }
+    // }
 
     printf("ciphertext: %s\n", ciphertext);
     return 0;
