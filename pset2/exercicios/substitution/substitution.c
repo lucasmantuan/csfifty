@@ -5,10 +5,16 @@
 
 int main(void)
 {
-    string key = "vchprzgjntlskfbdqwaxeuymoi";
+    string key = "vchprzgjntlskfbdqwaxeuymoia";
     string plaintext = get_string("Plaintext: ");
     char ciphertext[strlen(plaintext)];
     int character = 97;
+
+    if (strlen(key) != 26)
+    {
+        printf("A chave deve conter 26 caracteres.\n");
+        return 1;
+    }
 
     // percorre 26 vezes
     for (int j = 0; j < 26; j++)
