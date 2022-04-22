@@ -15,8 +15,11 @@ int main(void)
     // substitui a letra informada pela sua correspondente cifrada
     for (int i = 0; i < size; i++)
     {
-        int j = index(plaintext[i]);
-        ciphertext[i] = key[j];
+        if (isalpha(plaintext[i]))
+        {
+            int j = index(plaintext[i]);
+            ciphertext[i] = key[j];
+        }
     }
 
     printf("ciphertext: %s\n", ciphertext);
