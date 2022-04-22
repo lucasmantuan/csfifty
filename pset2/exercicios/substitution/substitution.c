@@ -15,7 +15,7 @@ int main(void)
 
     for (int i = 0; i < size; i++)
     {
-        printf("%c\n", qual_letra(plaintext[i]));
+        printf("%i\n", qual_letra(plaintext[i]));
     }
 
 
@@ -24,19 +24,17 @@ int main(void)
     // return 0;
 }
 
-// retorna qual é a letra recebida como parâmetro
+// retorna o índice da letra recebida como parâmetro
 int qual_letra(int n)
 {
     int character = 97;
-
     for (int i = 0; i < 26; i++)
     {
         if (n == character)
         {
-            // ciphertext[i] = tolower(key[0]);
-            return character;
+            return i;
         }
         character++;
     }
-    return 0;
+    return 1000;
 }
