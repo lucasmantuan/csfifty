@@ -25,9 +25,6 @@ int main(int argc, string argv[])
     char ciphertext[strlen(plaintext)];
     int character = 97;
 
-    int a = isalpha(plaintext[0]);
-    printf("         %i\n", a);
-
     // percorre 26 vezes
     // for (int j = 0; j < 26; j++)
     // {
@@ -37,25 +34,25 @@ int main(int argc, string argv[])
             // primeiro verificando se é uma letra...
             if (isalpha(plaintext[i]))
             {
-                // depois verificando se é maiuscula e fazendo sua conversão...
-                if (isupper(plaintext[i]))
-                {
-                    // para então verificar qual é a letra...
-                    if (tolower(plaintext[i]) == character)
-                    {
-                        // e fazer a substituição apropriada se for uma letra...
-                        ciphertext[i] = toupper(key[0]);
-                    }
-                }
-                // entretanto se for minuscula, não faz sua conversão ...
-                else
-                {
-                    //
-                    if (plaintext[i] == character)
-                    {
-                        ciphertext[i] = tolower(key[0]);
-                    }
-                }
+                // // depois verificando se é maiuscula e fazendo sua conversão...
+                // if (isupper(plaintext[i]))
+                // {
+                //     // para então verificar qual é a letra...
+                //     if (tolower(plaintext[i]) == character)
+                //     {
+                //         // e fazer a substituição apropriada se for uma letra...
+                //         ciphertext[i] = toupper(key[0]);
+                //     }
+                // }
+                // // entretanto se for minuscula, não faz sua conversão ...
+                // else
+                // {
+                //     //
+                //     if (plaintext[i] == character)
+                //     {
+                //         ciphertext[i] = tolower(key[0]);
+                //     }
+                // }
             }
             else
             {
