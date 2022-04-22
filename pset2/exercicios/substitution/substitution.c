@@ -3,7 +3,7 @@
 #include <string.h>
 #include <ctype.h>
 
-int qual_letra(char n);
+int qual_letra(int n);
 
 int main(void)
 {
@@ -12,15 +12,16 @@ int main(void)
     int size = strlen(plaintext);
     char ciphertext[size];
 
-    printf("%s\n", ciphertext);
-    return 0;
-
     int teste = qual_letra(plaintext[0]);
-    printf("%i é igual \n", teste);
+
+    printf("%c é igual \n", teste);
+
+    // printf("%s\n", ciphertext);
+    // return 0;
 }
 
 // retorna qual é a letra recebida como parâmetro
-int qual_letra(char n)
+int qual_letra(int n)
 {
     int character = 97;
 
