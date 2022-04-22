@@ -9,12 +9,16 @@ int main(void)
 {
     string key = "VcHpRzGjNtLsKfBdQwAxEuYmOi";
     string plaintext = get_string("plaintext: ");
+
     int size = strlen(plaintext);
-    char ciphertext[size];
+    //char ciphertext[size];
 
-    int teste = qual_letra(plaintext[0]);
+    for (int i = 0; i < size; i++)
+    {
+        printf("%c\n", qual_letra(plaintext[i]));
+    }
 
-    printf("%c é igual \n", teste);
+
 
     // printf("%s\n", ciphertext);
     // return 0;
