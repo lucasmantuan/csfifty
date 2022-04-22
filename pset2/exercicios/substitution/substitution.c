@@ -23,7 +23,7 @@ int main(int argc, string argv[])
     }
 
     string plaintext = get_string("plaintext: ");
-    char ciphertext[strlen(plaintext)];
+    char ciphertext[5];
 
     int character = 97;
 
@@ -64,7 +64,7 @@ int main(int argc, string argv[])
             }
 
         }
-        getchar;
+        ciphertext = getchar;
         break;
     }
 
