@@ -57,6 +57,8 @@ int main(int argc, string argv[])
             else
             {
                 // ou então manter o caractere.
+                printf("teste ciphertext: %c\n", ciphertext[i]);
+                printf("teste plaintext: %c\n", plaintext[i]);
                 ciphertext[i] = plaintext[i];
             }
             // character++;
