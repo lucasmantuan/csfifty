@@ -60,6 +60,7 @@ int main(int argc, string argv[])
                 printf("teste ciphertext: %c\n", ciphertext[i]);
                 printf("teste plaintext: %c\n", plaintext[i]);
                 ciphertext[i] = plaintext[i];
+                printf("teste ciphertext: %c\n", ciphertext[i]);
             }
             // character++;
         }
