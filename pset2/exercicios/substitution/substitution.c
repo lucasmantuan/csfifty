@@ -16,13 +16,15 @@ int main(void)
     int character = 97;
 
     // percorre 26 vezes cada letra
-    for (int i = 0, j = 0 ; i < 26; i++)
+    for (int i = 0; i < 26; i++)
     {
         if (plaintext[i] == character)
         {
-            ciphertext[i] = tolower(key[0]);
+            printf("%i\n", character);
+            // ciphertext[i] = tolower(key[0]);
             break;
         }
+        character++;
     }
 
     printf("%s\n", ciphertext);
