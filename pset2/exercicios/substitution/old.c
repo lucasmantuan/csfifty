@@ -43,7 +43,7 @@ int main(int argc, string argv[])
                     if (tolower(plaintext[i]) == character)
                     {
                         // e fazer a substituição apropriada se for uma letra...
-                        ciphertext[i] = toupper(key[0]);
+                        ciphertext[i] = (key[0]);
                         break;
                     }
                 }

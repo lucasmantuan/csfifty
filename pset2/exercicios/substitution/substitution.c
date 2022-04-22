@@ -20,17 +20,15 @@ int main(void)
             // verifica se é maiuscula
             if (isupper(plaintext[i]))
             {
-                if (tolower(plaintext[i]) == character)
-                {
-                    
-                }
-                // substitui a letra informada por sua correspondente cifrada
-                int j = index(plaintext[i]);
-                ciphertext[i] = key[j];
+                // substitui a letra e converte para maiuscula
+                int j = index(tolower(plaintext[i]));
+                ciphertext[i] = toupper(key[j]);
             }
             else
             {
-
+                // substitui a letra mas não converte para maiuscula
+                int j = index(plaintext[i]);
+                ciphertext[i] = tolower(key[j]);
             }
         }
         else
