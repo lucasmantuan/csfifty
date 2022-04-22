@@ -49,7 +49,7 @@ int main(int argc, string argv[])
                     //
                     if (plaintext[i] == character)
                     {
-                        ciphertext[i] = key[j];
+                        ciphertext[i] = tolower(key[j]);
                     }
                 }
             }
