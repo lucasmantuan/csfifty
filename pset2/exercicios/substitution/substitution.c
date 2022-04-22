@@ -32,11 +32,12 @@ int main(int argc, string argv[])
         // cada uma das letras de plaintext...
         for (int i = 0, n = strlen(plaintext); i < n; i++)
         {
-        printf("%c\n", plaintext[i]);
-        
             // primeiro verificando se é uma letra...
             if (isalpha(plaintext[i]))
             {
+
+                printf("%c\n", plaintext[i]);
+
                 // depois verificando se é maiuscula e fazendo sua conversão...
                 if (isupper(plaintext[i]))
                 {
