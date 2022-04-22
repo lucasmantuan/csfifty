@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <cs50.h>
-#include <string.h>
+//#include <string.h>
 #include <ctype.h>
 
 int main(void)
@@ -20,7 +20,7 @@ int main(void)
             // primeiro verificando se é uma letra...
             if (isalpha(plaintext[i]))
             {
-                // depois verificando se é maiuscula
+                // depois verificando se é maiuscula e fazendo sua conversão...
                 if (isupper(plaintext[i]))
                 {
                     // para então verificar qual é a letra...
@@ -30,8 +30,10 @@ int main(void)
                         ciphertext[i] = toupper(key[j]);
                     }
                 }
+                // entretanto se for minuscula, não faz sua conversão ...
                 else
                 {
+                    //
                     if (plaintext[i] == character)
                     {
                         ciphertext[i] = key[j];
