@@ -23,6 +23,10 @@ int main(int argc, string argv[])
         return 1;
     }
 
+    for (int i = 0; ) {
+
+    }
+
     string plaintext = get_string("plaintext: ");
     int size = strlen(plaintext);
     char ciphertext[size];
