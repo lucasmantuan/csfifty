@@ -19,8 +19,10 @@ int main(int argc, string argv[])
 
     for (int i = 0, n = strlen(key); i < n; i++ )
     {
-        sum += key[i];
+        sum += (int) tolower(key[i]);
     }
+
+    printf("%i\n", sum);
 
     // verifica a quantidade de caracteres da chave
     if (strlen(key) != 26 || sum != 2015)
