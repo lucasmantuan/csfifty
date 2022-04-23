@@ -25,7 +25,7 @@ int main(int argc, string argv[])
     // verifica a quantidade de caracteres da chave
     if (strlen(key) != 26 || sum != 2015)
     {
-        printf("A chave deve conter 26 caracteres.\n");
+        printf("A chave deve conter 26 caracteres alfabéticos.\n");
         return 1;
     }
 
