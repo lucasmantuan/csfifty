@@ -23,9 +23,12 @@ int main(int argc, string argv[])
         return 1;
     }
 
-    for (int i = 0; ) {
-
+    int sum;
+    for (int i = 0, n = strlen(key); i < n; i++ )
+    {
+        sum += key[i];
     }
+    printf("%i\n", sum);
 
     string plaintext = get_string("plaintext: ");
     int size = strlen(plaintext);
