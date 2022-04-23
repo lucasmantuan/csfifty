@@ -8,6 +8,7 @@ int index(int n);
 int main(int argc, string argv[])
 {
     string key = argv[1];
+    int sum = 0;
 
     // verifica a quantidade de argumentos
     if (argc != 2)
@@ -16,19 +17,17 @@ int main(int argc, string argv[])
         return 1;
     }
 
-    // verifica a quantidade de caracteres da chave
-    if (strlen(key) != 26)
-    {
-        printf("A chave deve conter 26 caracteres.\n");
-        return 1;
-    }
-
-    int sum;
     for (int i = 0, n = strlen(key); i < n; i++ )
     {
         sum += key[i];
     }
-    printf("%i\n", sum);
+
+    // verifica a quantidade de caracteres da chave
+    if (strlen(key) != 26 || sum != 2015)
+    {
+        printf("A chave deve conter 26 caracteres.\n");
+        return 1;
+    }
 
     string plaintext = get_string("plaintext: ");
     int size = strlen(plaintext);
