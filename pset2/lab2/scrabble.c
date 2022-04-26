@@ -19,13 +19,25 @@ int main(void)
     int score1 = compute_score(word1);
     int score2 = compute_score(word2);
 
-    printf("%i\n", score1);
-    printf("%i\n", score2);
+    // Determina o vencedor
+    if (score1 > score2)
+    {
+        printf("Player 1 wins!\n");
+    }
+    else if (score1 < score2)
+    {
+        printf("Player 2 wins!\n");
+    }
+    else
+    {
+        printf("Tie!\n");
+    }
+
 }
 
+// Calcula a pontuação das palavras
 int compute_score(string word)
 {
-
     int index = 0;
     int score = 0;
     for (int i = 0, n = strlen(word); i < n; i++)
@@ -36,6 +48,7 @@ int compute_score(string word)
     return score;
 }
 
+// Retorna o índice da letra
 int compute_index(int n)
 {
     int letter = 97;
