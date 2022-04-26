@@ -43,6 +43,13 @@ int compute_score(string word)
     int score = 0;
     for (int i = 0, n = strlen(word); i < n; i++)
     {
+        if (isalpha())
+        {
+
+        }
+
+
+
         index = compute_index(tolower(word[i]));
         score += POINTS[index];
     }
