@@ -7,7 +7,7 @@
 int POINTS[] = {1, 3, 3, 2, 1, 4, 2, 4, 1, 8, 5, 1, 3, 1, 1, 3, 10, 1, 1, 1, 1, 4, 4, 8, 4, 10};
 
 int compute_score(string word);
-int index(int n);
+int compute_index(int n);
 
 int main(void)
 {
@@ -25,20 +25,18 @@ int main(void)
 int compute_score(string word)
 {
 
-    int j = 0;
+    int index = 0;
     int score = 0;
     for (int i = 0, n = strlen(word); i < n; i++)
     {
-        j = index(word[i]);
-        printf("j - %i\n", i);
+        index = compute_index(word[i]);
+        score += POINTS[index];
     }
-
-     = POINTS[j];
     printf("%i\n", score);
     return score;
 }
 
-int index(int n)
+int compute_index(int n)
 {
     int letter = 97;
     for (int i = 0; i < 26; i++)
