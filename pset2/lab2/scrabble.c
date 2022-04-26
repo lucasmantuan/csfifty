@@ -24,10 +24,15 @@ int main(void)
 
 int compute_score(string word)
 {
-    int i = index(word[0]);
-    printf("%i\n", i);
 
-    int score = POINTS[i];
+    int j = 0;
+    for (int i = 0, n = strlen(word); i < n; i++)
+    {
+        j = index(word[i]);
+        printf("j - %i\n", i);
+    }
+
+    int score = POINTS[j];
     printf("%i\n", score);
     return score;
 }
