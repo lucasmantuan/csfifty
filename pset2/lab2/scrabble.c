@@ -26,13 +26,14 @@ int compute_score(string word)
 {
 
     int j = 0;
+    int score = 0;
     for (int i = 0, n = strlen(word); i < n; i++)
     {
         j = index(word[i]);
         printf("j - %i\n", i);
     }
 
-    int score = POINTS[j];
+     = POINTS[j];
     printf("%i\n", score);
     return score;
 }
