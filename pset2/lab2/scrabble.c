@@ -26,7 +26,10 @@ int compute_score(string word)
 {
     int i = index(word[0]);
     printf("%i\n", i);
-    return i;
+
+    int score = POINTS[i];
+    printf("%i\n", score);
+    return score;
 }
 
 int index(int n)
