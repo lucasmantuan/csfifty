@@ -23,7 +23,6 @@ int main(void)
     if (score1 > score2)
     {
         printf("Player 1 wins!\n");
-        printf("%i\n", score1);
     }
     else if (score1 < score2)
     {
@@ -43,15 +42,11 @@ int compute_score(string word)
     int score = 0;
     for (int i = 0, n = strlen(word); i < n; i++)
     {
-        if (isalpha())
+        if (isalpha(word[i]))
         {
-
-        }
-
-
-
         index = compute_index(tolower(word[i]));
         score += POINTS[index];
+        }
     }
     return score;
 }
