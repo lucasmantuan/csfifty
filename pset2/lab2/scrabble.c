@@ -47,5 +47,5 @@ int compute_index(int n)
         }
         letter++;
     }
-    return -1;
+    return 0;
 }
