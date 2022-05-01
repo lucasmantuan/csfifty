@@ -68,7 +68,16 @@ int main(int argc, string argv[])
 bool vote(string name)
 {
 
-    return true;
+    for (int i = 0; i < candidate_count; i++)
+    {
+        if (strcmp(candidates[i].name, name) == 0)
+        {
+            printf("Encontrado %s\n", candidates[i].name);
+            return true;
+        }
+    }
+
+    return false;
 }
 
 // Print the winner (or winners) of the election
