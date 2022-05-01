@@ -88,7 +88,7 @@ void print_winner(void)
         winner = candidates[1].name;
     }
 
-    printf("%s - %i")
+    printf("%s - %i", winner, max);
 
     return;
 }
