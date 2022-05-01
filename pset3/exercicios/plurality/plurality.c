@@ -56,6 +56,7 @@ int main(int argc, string argv[])
         if (vote(name))
         {
             printf("Encontrado.\n");
+            printf("%i\n", candidates[0].votes);
         }
 
         // Check for invalid vote
@@ -77,6 +78,7 @@ bool vote(string name)
     {
         if (strcmp(candidates[i].name, name) == 0)
         {
+            candidates[i].votes++;
             return true;
         }
     }
