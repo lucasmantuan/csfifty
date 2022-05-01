@@ -57,12 +57,10 @@ int main(int argc, string argv[])
             printf("Encontrado.\n");
             printf("%i\n", candidates[0].votes);
         }
-
-        // Check for invalid vote
-        // if (!vote(name))
-        // {
-        //     printf("Invalid vote.\n");
-        // }
+        else
+        {
+            printf("Invalid vote.\n");
+        }
     }
 
     // Display winner of election
@@ -77,7 +75,7 @@ bool vote(string name)
     {
         if (strcmp(candidates[i].name, name) == 0)
         {
-            candidates[i].votes += 1;
+            candidates[i].votes++;
             return true;
         }
     }
