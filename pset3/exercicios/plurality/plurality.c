@@ -51,23 +51,22 @@ int main(int argc, string argv[])
     for (int i = 0; i < voter_count; i++)
     {
         string name = get_string("Vote: ");
-        printf("%i\n", candidates[0].votes);
-        vote(name);
 
         if (vote(name))
         {
             printf("Encontrado.\n");
+            printf("%i\n", candidates[0].votes);
         }
 
         // Check for invalid vote
-        if (!vote(name))
-        {
-            printf("Invalid vote.\n");
-        }
+        // if (!vote(name))
+        // {
+        //     printf("Invalid vote.\n");
+        // }
     }
 
     // Display winner of election
-    print_winner();
+    // print_winner();
 }
 
 // Update vote totals given a new vote
@@ -82,13 +81,12 @@ bool vote(string name)
             return true;
         }
     }
-
     return false;
 }
 
 // Print the winner (or winners) of the election
-void print_winner(void)
-{
-    // TODO
-    return;
-}
+// void print_winner(void)
+// {
+//     // TODO
+//     return;
+// }
