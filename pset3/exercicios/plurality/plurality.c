@@ -53,6 +53,11 @@ int main(int argc, string argv[])
         string name = get_string("Vote: ");
         vote(name);
 
+        if (vote(name))
+        {
+            printf("Encontrado.\n");
+        }
+
         // Check for invalid vote
         if (!vote(name))
         {
@@ -72,7 +77,6 @@ bool vote(string name)
     {
         if (strcmp(candidates[i].name, name) == 0)
         {
-            printf("Encontrado %s\n", candidates[i].name);
             return true;
         }
     }
