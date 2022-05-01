@@ -85,7 +85,10 @@ void print_winner(void)
     if (candidates[1].votes > max)
     {
         max = candidates[1].votes;
+        winner = candidates[1].name;
     }
+
+    printf("%s - %i")
 
     return;
 }
