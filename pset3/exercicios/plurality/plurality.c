@@ -51,6 +51,7 @@ int main(int argc, string argv[])
     for (int i = 0; i < voter_count; i++)
     {
         string name = get_string("Vote: ");
+        vote(name);
 
         // Check for invalid vote
         if (!vote(name))
@@ -60,13 +61,13 @@ int main(int argc, string argv[])
     }
 
     // Display winner of election
-    print_winner();
+    //print_winner();
 }
 
 // Update vote totals given a new vote
 bool vote(string name)
 {
-    // TODO
+    printf("Vote in %s\n", name);
     return false;
 }
 
