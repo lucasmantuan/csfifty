@@ -67,7 +67,7 @@ int main(int argc, string argv[])
 // Update vote totals given a new vote
 bool vote(string name)
 {
-    printf("Vote in %s\n", name);
+    printf("Vote in       asd %s\n", name);
     return false;
 }
 
