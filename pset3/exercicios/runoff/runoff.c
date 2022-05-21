@@ -129,12 +129,11 @@ int main(int argc, string argv[])
 bool vote(int voter, int rank, string name)
 {
 
-    for ()
+    for (int i = 0; i < candidate_count; i++)
     {
-        
+        printf("candidate: %s\n", candidates[i].name);
+        printf("name: %s\n", name);
     }
-
-
 
     return false;
 }
