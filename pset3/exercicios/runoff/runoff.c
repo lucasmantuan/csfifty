@@ -131,10 +131,11 @@ bool vote(int voter, int rank, string name)
 
     for (int i = 0; i < candidate_count; i++)
     {
-        if (name == candidates[i].name)
-
-        printf("candidate: %s\n", candidates[i].name);
-        printf("i: %i\n", i);
+        if (strcmp(name, candidates[i].name) == 0)
+        {
+            printf("igual\n");
+            printf("i: %i\n", i);
+        }
     }
 
     return false;
