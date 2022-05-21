@@ -159,8 +159,8 @@ void tabulate(void)
 // Print the winner of the election, if there is one
 bool print_winner(void)
 {
-    // TODO
-    return false;
+                    printf("%s\n", candidates[i].name);
+    return true;
 }
 
 // Return the minimum number of votes any remaining candidate has
