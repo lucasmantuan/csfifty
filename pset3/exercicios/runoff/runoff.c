@@ -177,13 +177,16 @@ bool print_winner(void)
 // Return the minimum number of votes any remaining candidate has
 int find_min(void)
 {
-    int min = 0;
+    int min = candidates[0].votes;
 
-    for (int i = 0; i < voter_count; i++)
+    for (int i = 1; i < voter_count; i++)
     {
-        min = candidates[i].name
+        if (candidates[i + 1].votes < candidates[i].votes)
+        {
+            min = candidates[i + 1].votes;
+        }
     }
-    return 0;
+    return min;
 }
 
 // Return true if the election is tied between all candidates, false otherwise
