@@ -192,6 +192,7 @@ int find_eliminated(int index)
     {
         return candidates[index].votes;
     }
+    return false;
 }
 
 // Return true if the election is tied between all candidates, false otherwise
