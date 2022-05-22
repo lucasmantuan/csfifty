@@ -181,8 +181,11 @@ int find_min(void)
 
     for (int i = 1; i < voter_count; i++)
     {
+        if ()
+        {
 
-        
+        }
+
 
 
 
