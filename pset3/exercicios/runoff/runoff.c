@@ -208,6 +208,7 @@ bool is_tie(int min)
     // se a qtd de presentes for igual a de candidatos com votos iguais, a eleição é um empate.
 
     int candidates_remaining = 0;
+    int candidates_equal = 0;
 
     for (int i = 0; i < voter_count; i++)
     {
@@ -219,9 +220,9 @@ bool is_tie(int min)
 
     for (int i = 0; i < voter_count; i++)
     {
-        if (!candidates[i].eliminated)
+        if (candidates[i].votes == min)
         {
-            candidates_remaining++;
+            candidates_equal++;
         }
     }
 
