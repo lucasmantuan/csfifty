@@ -188,6 +188,9 @@ int find_min(void)
         }
     }
 
+    printf("%i\n", min);
+    printf("%i\n", index);
+
     for (int i = index + 1; i < voter_count; i++)
     {
         if (!candidates[i].eliminated)
