@@ -204,16 +204,25 @@ int find_min(void)
 // Return true if the election is tied between all candidates, false otherwise
 bool is_tie(int min)
 {
-    // preciso ter a quantidade de candidatos presentes na eleição
     // depois eu vou contar quantos candidatos tem a o mesmo numero de votos que min
     // se a qtd de presentes for igual a de candidatos com votos iguais, a eleição é um empate.
 
-    int 
+    int candidates_remaining = 0;
 
     for (int i = 0; i < voter_count; i++)
     {
+        if (!candidates[i].eliminated)
+        {
+            candidates_remaining++;
+        }
+    }
 
-        return true;
+    for (int i = 0; i < voter_count; i++)
+    {
+        if (!candidates[i].eliminated)
+        {
+            candidates_remaining++;
+        }
     }
 
     sem empate
