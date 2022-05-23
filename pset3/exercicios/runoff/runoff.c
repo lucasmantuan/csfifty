@@ -200,7 +200,7 @@ int find_min(void)
     // }
     // return min;
 
-    int min = candidates[0].votes;
+    int min = 0;
 
     for (int i = 0; i < voter_count; i++)
     {
