@@ -16,8 +16,7 @@ typedef struct
 {
     int winner;
     int loser;
-}
-pair;
+} pair;
 
 // Array of candidates
 string candidates[MAX];
@@ -104,7 +103,12 @@ bool vote(int rank, string name, int ranks[])
     for (int i = 0; i < candidate_count; i++)
     {
         // Compara o valor recebido em name com a lista de candidatos
-        if (strcmp(name, candidate[i]))
+        if (strcmp(name, candidates[i] == 0))
+        {
+            // Se true, atualiza o ranks com o indice do candidato
+            ranks[rank] = i;
+            return true
+        }
     }
     return false;
 }
@@ -143,4 +147,3 @@ void print_winner(void)
     // TODO
     return;
 }
-
