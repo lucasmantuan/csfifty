@@ -107,7 +107,7 @@ bool vote(int rank, string name, int ranks[])
         {
             // Se true, atualiza o ranks com o indice do candidato
             ranks[rank] = i;
-            return true
+            return true;
         }
     }
     return false;
