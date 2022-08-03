@@ -8,6 +8,7 @@ int main(void)
 {
     char *s = get_string("s: ");
     char *t = malloc(strlen(s) + 1);
+    char *u = malloc(strlen(s) + 1);
 
     if (t == NULL)
     {
@@ -24,8 +25,12 @@ int main(void)
         t[0] = toupper(t[0]);
     }
 
+    strcpy(t, u);
+
     printf("s: %s\n", s);
     printf("t: %s\n", t);
+    printf("u: %s\n", u);
 
     free(t);
+    free(u);
 }
