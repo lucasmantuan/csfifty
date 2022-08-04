@@ -25,7 +25,7 @@ int main(void)
         t[0] = toupper(t[0]);
     }
 
-    strcpy(t, u);
+    strcpy(u, t);
 
     printf("s: %s\n", s);
     printf("t: %s\n", t);
