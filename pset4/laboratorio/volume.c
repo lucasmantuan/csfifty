@@ -35,14 +35,19 @@ int main(int argc, char *argv[])
     int16_t buffer;
 
     // Copy header from input file to output file
+    fread(&header, HEADER_SIZE, 1, input);
+    fwrite(&header, HEADER_SIZE, 1, output);
+
+    // TODO: Read samples from input file and write updated data to output file
     while (fread(&buffer, sizeof(buffer), 1, input))
     {
+        buffer = buffer * factor;
         fwrite(&buffer, sizeof(buffer), 1, output);
     }
-    // TODO: Read samples from input file and write updated data to output file
 
     // Close files
     fclose(input);
     fclose(output);
+
     return 0;
 }
