@@ -7,8 +7,8 @@ void grayscale(int height, int width, RGBTRIPLE image[height][width])
 
     for (int i = 0; i < width; i++)
     {
-        media = image[0][i]
-        printf(media, "Invalid filter.\n");
+        media = image[0][i];
+        printf("%i\n", media);
     }
 
     return;
