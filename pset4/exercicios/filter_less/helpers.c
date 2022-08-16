@@ -4,12 +4,17 @@
 // Convert image to grayscale
 void grayscale(int height, int width, RGBTRIPLE image[height][width])
 {
-    double media = 0;
+    int media = 0;
 
     for (int i = 0; i < width; i++)
     {
-        media = (image[0][i].rgbtRed + image[0][i].rgbtGreen + image[0][i].rgbtBlue) / 3;
-        printf("%f - ", media);
+        for (int j = 0; j < height; j++)
+        {
+            media = (int)(image[j][i].rgbtRed + image[j][i].rgbtGreen + image[j][i].rgbtBlue) / 3;
+            image[j][i].rgbtRed = media;
+            image[j][i].rgbtGreen = media;
+            image[j][i].rgbtBlue = media;
+        }
     }
 
     return;
