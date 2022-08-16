@@ -75,8 +75,8 @@ void reflect(int height, int width, RGBTRIPLE image[height][width])
             right = &image[height - 1 - j][i];
             left = &image[j][i];
             aux = *right;
-            right = *left;
-            left = *aux;
+            *right = *left;
+            *left = aux;
         }
     }
 
