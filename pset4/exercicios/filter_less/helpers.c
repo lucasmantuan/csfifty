@@ -3,7 +3,13 @@
 // Convert image to grayscale
 void grayscale(int height, int width, RGBTRIPLE image[height][width])
 {
-    int media
+    int media = 0;
+
+    for (int i = 0; i < width; i++)
+    {
+        media = image[0][i]
+        printf(media, "Invalid filter.\n");
+    }
 
     return;
 }
