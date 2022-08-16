@@ -72,11 +72,11 @@ void reflect(int height, int width, RGBTRIPLE image[height][width])
     {
         for (int j = 0; j < height; j++)
         {
-            left = image[j][i];
-            right = image[width - 1 - j][i];
-            aux = right;
-            right = left;
-            left = aux;
+            right = &image[height - 1 - j][i];
+            left = &image[j][i];
+            aux = *right;
+            right = *left;
+            left = *aux;
         }
     }
 
