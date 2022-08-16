@@ -39,6 +39,16 @@ void sepia(int height, int width, RGBTRIPLE image[height][width])
             {
                 image[j][i].rgbtRed = sepiaRed;
             }
+
+            if (sepiaGreen <= 255)
+            {
+                image[j][i].rgbtGreen = sepiaGreen;
+            }
+
+            if (sepiaBlue <= 255)
+            {
+                image[j][i].rgbtBlue = sepiaBlue;
+            }
         }
     }
 
