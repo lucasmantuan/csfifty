@@ -90,7 +90,7 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
     {
         for (int j = 0; j < height; j++)
         {
-            mediaRed = round((image[j][i].rgbtRed + image[j][i].rgbtGreen + image[j][i].rgbtBlue) / 3.0);
+            mediaRed = round((image[j][i].rgbtRed + image[j][i+1].rgbtRed + image[j+1][i+1].rgbtRed + image[j][i].rgbtRed) / 9.0);
             image[j][i].rgbtRed = media;
             image[j][i].rgbtGreen = media;
             image[j][i].rgbtBlue = media;
