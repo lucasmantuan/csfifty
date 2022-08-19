@@ -82,24 +82,15 @@ void reflect(int height, int width, RGBTRIPLE image[height][width])
 // Blur image
 void blur(int height, int width, RGBTRIPLE image[height][width])
 {
-    int mediaRed;
-    int mediaGreen;
-    int mediaBlue;
-
     for (int i = 1; i < width - 1; i++)
     {
         for (int j = 1; j < height - 1; j++)
         {
-            mediaRed = round(( image[j][i].rgbtRed + image[j][i+1].rgbtRed + image[j+1][i+1].rgbtRed + image[j+1][i].rgbtRed + image[j+1][i-1].rgbtRed + image[j+1][i].rgbtRed + image[j-1][i-1].rgbtRed + image[j][i+1].rgbtRed + image[j-1][i+1].rgbtRed) / 9.0);
-            image[j][i].rgbtRed = mediaRed;
+            image[j][i].rgbtRed = round(( image[j][i].rgbtRed + image[j][i+1].rgbtRed + image[j+1][i+1].rgbtRed + image[j+1][i].rgbtRed + image[j+1][i-1].rgbtRed + image[j+1][i].rgbtRed + image[j-1][i-1].rgbtRed + image[j][i+1].rgbtRed + image[j-1][i+1].rgbtRed) / 9.0);
 
-            image[i][j].rgbtRed = round((original[i][j].rgbtRed + original[i + 1][j].rgbtRed + original[i][j + 1].rgbtRed + original[i + 1][j + 1].rgbtRed) / 4);
+            image[j][i].rgbtGreen = round(( image[j][i].rgbtGreen + image[j][i+1].rgbtGreen + image[j+1][i+1].rgbtGreen + image[j+1][i].rgbtGreen + image[j+1][i-1].rgbtGreen + image[j+1][i].rgbtGreen + image[j-1][i-1].rgbtGreen + image[j][i+1].rgbtGreen + image[j-1][i+1].rgbtGreen) / 9.0);
 
-            mediaGreen = round(( image[j][i].rgbtGreen + image[j][i+1].rgbtGreen + image[j+1][i+1].rgbtGreen + image[j+1][i].rgbtGreen + image[j+1][i-1].rgbtGreen + image[j+1][i].rgbtGreen + image[j-1][i-1].rgbtGreen + image[j][i+1].rgbtGreen + image[j-1][i+1].rgbtGreen) / 9.0);
-            image[j][i].rgbtGreen = mediaGreen;
-
-            mediaBlue = round(( image[j][i].rgbtBlue + image[j][i+1].rgbtBlue + image[j+1][i+1].rgbtBlue + image[j+1][i].rgbtBlue + image[j+1][i-1].rgbtBlue + image[j+1][i].rgbtBlue + image[j-1][i-1].rgbtBlue + image[j][i+1].rgbtBlue + image[j-1][i+1].rgbtBlue) / 9.0);
-            image[j][i].rgbtBlue = mediaBlue;
+            image[j][i].rgbtBlue = round(( image[j][i].rgbtBlue + image[j][i+1].rgbtBlue + image[j+1][i+1].rgbtBlue + image[j+1][i].rgbtBlue + image[j+1][i-1].rgbtBlue + image[j+1][i].rgbtBlue + image[j-1][i-1].rgbtBlue + image[j][i+1].rgbtBlue + image[j-1][i+1].rgbtBlue) / 9.0);
         }
     }
     return;
