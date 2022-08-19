@@ -82,9 +82,9 @@ void reflect(int height, int width, RGBTRIPLE image[height][width])
 // Blur image
 void blur(int height, int width, RGBTRIPLE image[height][width])
 {
-    for (int i = 0; i < height; i++)
+    for (int j = 1; j < height - 1; j++)
     {
-        for (int j = 0; j < width; j++)
+        for (int i = 1; i < width - 1; i++)
         {
             image[j][i].rgbtRed = round(( image[j][i].rgbtRed + image[j][i+1].rgbtRed + image[j+1][i+1].rgbtRed + image[j+1][i].rgbtRed + image[j+1][i-1].rgbtRed + image[j+1][i].rgbtRed + image[j-1][i-1].rgbtRed + image[j][i+1].rgbtRed + image[j-1][i+1].rgbtRed) / 9.0);
 
