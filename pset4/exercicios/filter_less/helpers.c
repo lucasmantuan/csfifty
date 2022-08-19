@@ -82,75 +82,40 @@ void reflect(int height, int width, RGBTRIPLE image[height][width])
 // Blur image
 void blur(int height, int width, RGBTRIPLE image[height][width])
 {
-        // Iteração para acesso a cada pixel da imagem
-    for(int i = 0; i < height; i++)
+    for (int i = 1; i < height - 1; i++)
     {
-        for(int j = 0; j < width; j++)
+        for (int j = 1; j < width - 1; j++)
         {
-            // Variáveis para cálculo da média dos valores RGB de cada pixel
-            int somaMediaR = 0;
-            int somaMediaG = 0;
-            int somaMediaB = 0;
-            int cont = 0;
-            // Iteração para acesso a matriz 3x3 referente a cada pixel
-            // A variável 'a' vai de 'i - 1', linha anterior ao pixel, a 'i + 1' linha posterior ao pixel
-            for(int a = i - 1; a <= i + 1; a++)
-            {
-                // A variável 'a' não pode ser negativa e não superior ao total de linhas
-                // Valores negativos ou superiores ao total de linhas significa acesso a local de memória fora do arquivo
-                if(a >= 0 && a <= height)
-                {
-                    // A variável 'b' vai de 'j - 1', coluna anterior ao pixel, a 'j + 1' coluna posterior ao pixel
-                    for(int b = j - 1; b <= j + 1; b++)
-                    {
-                        // A variável 'b' não pode ser negativa e não superior ao total de colunas
-                        // Valores negativos ou superiores ao total de colunas significa acesso a local de memória fora do arquivo
-                        if(b >= 0 && b <= width)
-                        {
-                            somaMediaR += image[a][b].rgbtRed;
-                            somaMediaG += image[a][b].rgbtGreen;
-                            somaMediaB += image[a][b].rgbtBlue;
-                            cont++;
-                        }
-                    }
-                }
-            }
+            image[i][j].rgbtRed = round((
+            image[i+1][j].rgbtRed +
+            image[i+1][j-1].rgbtRed +
+            image[i][j-1].rgbtRed +
+            image[i-1][j-1].rgbtRed +
+            image[i-1][j].rgbtRed +
+            image[i-1][j+1].rgbtRed +
+            image[i][j+1].rgbtRed +
+            image[i+1][j+1].rgbtRed) / 9.0);
+
+            image[i][j].rgbtGreen = round((
+            image[i+1][j].rgbtGreen +
+            image[i+1][j-1].rgbtGreen +
+            image[i][j-1].rgbtGreen +
+            image[i-1][j-1].rgbtGreen +
+            image[i-1][j].rgbtGreen +
+            image[i-1][j+1].rgbtGreen +
+            image[i][j+1].rgbtGreen +
+            image[i+1][j+1].rgbtGreen) / 9.0);
+
+            image[i][j].rgbtBlue = round((
+            image[i+1][j].rgbtBlue +
+            image[i+1][j-1].rgbtBlue +
+            image[i][j-1].rgbtBlue +
+            image[i-1][j-1].rgbtBlue +
+            image[i-1][j].rgbtBlue +
+            image[i-1][j+1].rgbtBlue +
+            image[i][j+1].rgbtBlue +
+            image[i+1][j+1].rgbtBlue) / 9.0);
         }
     }
-    // for (int i = 1; i < height - 1; i++)
-    // {
-    //     for (int j = 1; j < width - 1; j++)
-    //     {
-    //         image[i][j].rgbtRed = round((
-    //         image[i+1][j].rgbtRed +
-    //         image[i+1][j-1].rgbtRed +
-    //         image[i][j-1].rgbtRed +
-    //         image[i-1][j-1].rgbtRed +
-    //         image[i-1][j].rgbtRed +
-    //         image[i-1][j+1].rgbtRed +
-    //         image[i][j+1].rgbtRed +
-    //         image[i+1][j+1].rgbtRed) / 9.0);
-
-    //         image[i][j].rgbtGreen = round((
-    //         image[i+1][j].rgbtGreen +
-    //         image[i+1][j-1].rgbtGreen +
-    //         image[i][j-1].rgbtGreen +
-    //         image[i-1][j-1].rgbtGreen +
-    //         image[i-1][j].rgbtGreen +
-    //         image[i-1][j+1].rgbtGreen +
-    //         image[i][j+1].rgbtGreen +
-    //         image[i+1][j+1].rgbtGreen) / 9.0);
-
-    //         image[i][j].rgbtBlue = round((
-    //         image[i+1][j].rgbtBlue +
-    //         image[i+1][j-1].rgbtBlue +
-    //         image[i][j-1].rgbtBlue +
-    //         image[i-1][j-1].rgbtBlue +
-    //         image[i-1][j].rgbtBlue +
-    //         image[i-1][j+1].rgbtBlue +
-    //         image[i][j+1].rgbtBlue +
-    //         image[i+1][j+1].rgbtBlue) / 9.0);
-    //     }
-    // }
     return;
 }
