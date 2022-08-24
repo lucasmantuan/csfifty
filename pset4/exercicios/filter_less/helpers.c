@@ -98,7 +98,7 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
         {
             int totalRed, totalBlue, totalGreen;
             totalRed = totalBlue = totalGreen = 0;
-            float counter = 0.00;
+            float counter = 9.00;
 
             for (int x = -1; x < 2; x++)
             {
@@ -118,13 +118,13 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
                     totalGreen += image[currentX][currentY].rgbtGreen;
                     totalBlue += image[currentX][currentY].rgbtBlue;
 
-                    counter++;
+                    // counter++;
+                }
 
                 // Calcula a média dos pixels
                 temp[i][j].rgbtRed = round(totalRed / counter);
                 temp[i][j].rgbtGreen = round(totalGreen / counter);
                 temp[i][j].rgbtBlue = round(totalBlue / counter);
-                }
             }
         }
     }
