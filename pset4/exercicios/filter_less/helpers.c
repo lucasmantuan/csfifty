@@ -92,15 +92,44 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
         }
     }
 
-    for (int x = -1; x < 2; x++)
+    for (int i = 0; i < height; i++)
     {
-        for (int y = 0; y < 2; y++)
+        for (int j = 0; j < width; j++)
         {
-            int currentX = i + x;
-            int currentY = j + y;
+            int totalRed = 0;
+            int totalBlue = 0;
+            int totalGreen = 0;
+            float counter = 0.0;
 
+            for (int x = -1; x < 2; x++)
+            {
+                for (int y = 0; y < 2; y++)
+                {
+                    int currentX = i + x;
+                    int currentY = j + y;
+
+                    // Verifica se os pixels são válidos
+                    if (currentX < 0 || currentX > (height - 1) || currentY < 0 || currentY > (width - 1))
+                    {
+                        continue;
+                    }
+
+                    // Pega o valor da imagem
+                    totalRed += image[currentX][currentY].rgbtRed;
+                    totalGreen += image[currentX][currentY].rgbtGreen;
+                    totalBlue += image[currentX][currentY].rgbtBlue;
+
+                    counter++;
+                }
+
+                // Calcula a média dos pixels
+                temp[i][j].rgbtRed = round(totalRed / counter);
+                temp[i][j].rgbtGreen = round(totalGreen / counter);
+                temp[i][j].rgbtBlue = round(totalBlue / counter);
+            }
         }
     }
+
 
     return;
 }
