@@ -119,12 +119,12 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
                     totalBlue += image[currentX][currentY].rgbtBlue;
 
                     counter++;
-                }
 
                 // Calcula a média dos pixels
                 temp[i][j].rgbtRed = round(totalRed / counter);
                 temp[i][j].rgbtGreen = round(totalGreen / counter);
                 temp[i][j].rgbtBlue = round(totalBlue / counter);
+                }
             }
         }
     }
