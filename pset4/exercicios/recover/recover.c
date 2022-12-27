@@ -20,5 +20,8 @@ int main(int argc, char *argv[])
         return 2;
     }
 
-    // Store blocks of 512 bytes in an array
+    // Armazene os blocos 512 bytes em um array
+    unsigned char buffer[512];
+
+    //
 }
