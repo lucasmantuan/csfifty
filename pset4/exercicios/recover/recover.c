@@ -41,7 +41,15 @@ int main(int argc, char *argv[])
         // Verifique se os butes indicam o começo de um arquivo JPEG
         if (buffer[0] == 0xff && buffer[1] == 0xd8 && buffer[2] == 0xff && (buffer[3] & 0xf0) == 0xe0)
         {
-            
+            // Escreva os nomes dos arquivos JPEGs
+            sprintf(filename, "%03i.jpg", count_image);
+
+            // Abra o output_file para escrita
+            output_file = fopen(filename, "w");
+
+            // Conte o número de images achadas
+            count_image++;
         }
+        //
     }
 }
