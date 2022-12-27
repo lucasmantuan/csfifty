@@ -20,5 +20,5 @@ int main(int argc, char *argv[])
         return 2;
     }
 
-    
+    // Store blocks of 512 bytes in an array
 }
