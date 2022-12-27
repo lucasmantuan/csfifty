@@ -32,5 +32,8 @@ int main(int argc, char *argv[])
     // Ponteiro dos arquivos das imagens geradas
     FILE *output_file = NULL;
 
-    //
+    // Char filename[8]
+    char *filename = malloc(8 * sizeof(char));
+
+    
 }
