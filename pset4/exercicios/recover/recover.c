@@ -23,5 +23,8 @@ int main(int argc, char *argv[])
     // Armazene os blocos 512 bytes em um array
     unsigned char buffer[512];
 
+    // Memorize a quantidade de imagens geradas
+    int count_image = 0;
+
     //
 }
