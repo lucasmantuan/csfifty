@@ -26,5 +26,8 @@ int main(int argc, char *argv[])
     // Memorize a quantidade de imagens geradas
     int count_image = 0;
 
-    //
+    // Ponteiro dos arquivos das imagens geradas
+    FILE *output_file = NULL;
+
+    // 
 }
