@@ -35,5 +35,13 @@ int main(int argc, char *argv[])
     // Char filename[8]
     char *filename = malloc(8 * sizeof(char));
 
-    
+    // Leia os blocos de 512 bytes
+    while (fread(buffer, sizeof(char), 512, input_file))
+    {
+        // Verifique se os butes indicam o começo de um arquivo JPEG
+        if (buffer[0] == 0xff && buffer[1] == 0xd8 && buffer[2] == 0xff && (buffer[3] & 0xf0) == 0xe0)
+        {
+            
+        }
+    }
 }
