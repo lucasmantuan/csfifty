@@ -13,5 +13,12 @@ int main(int argc, char *argv[])
     // Abre o arquivo para leitura
     FILE *input_file = fopen(argv[1], "r");
 
-    // 
+    // Verifica se o input_file é um arquivo válido
+    if (input_file == NULL)
+    {
+        printf("Could not open file\n");
+        return 2;
+    }
+
+    
 }
