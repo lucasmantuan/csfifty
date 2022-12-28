@@ -54,13 +54,13 @@ int main(int argc, char *argv[])
         // Verifique se o arquivo de saída foi usado para uma entrada válida
         if (output_file != NULL)
         {
-            fwrite(buffer, sizeof(char), 512, output_file)
+            fwrite(buffer, sizeof(char), 512, output_file);
         }
     }
 
     free(filename);
     fclose(output_file);
-    fclose(inoput_file);
+    fclose(input_file);
 
     return 0;
 }
