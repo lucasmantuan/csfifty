@@ -10,6 +10,8 @@ node;
 
 int main(void)
 {
+    node *list = NULL;
+
     node *n = malloc(sizeof(node));
 
     if (n != NULL)
@@ -19,4 +21,24 @@ int main(void)
     }
 
     list = n;
+
+    n = malloc(sizeof(node));
+
+    if (n != NULL)
+    {
+        n->number = 2;
+        n->next = NULL;
+    }
+
+    list->next = n;
+
+    n = malloc(sizeof(node));
+
+    if (n != NULL)
+    {
+        n->number = 3;
+        n->next = NULL;
+    }
+
+    list->next->next = n;
 }
