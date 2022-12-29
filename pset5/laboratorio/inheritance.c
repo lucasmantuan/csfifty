@@ -45,6 +45,9 @@ person *create_family(int generations)
     // Generation with parent data
     if (generations > 1)
     {
+        person *parent0 = create_family(generations - 1);
+        person *parent1 = create_family(generations - 1);
+
         // TODO: Recursively create blood type histories for parents
 
         // TODO: Randomly assign child alleles based on parents
