@@ -35,5 +35,16 @@ int main (void)
 
     list->next = n;
 
-    
+    n = malloc(sizeof(node))
+    if (n == NULL)
+    {
+        free(list->next);
+        free(list);
+        return 1;
+    }
+
+    n->number = 3;
+    n->next = NULL;
+
+    list->next->next = n ;
 }
