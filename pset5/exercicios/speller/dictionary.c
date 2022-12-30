@@ -104,18 +104,23 @@ unsigned int size(void)
 // Unloads dictionary from memory, returning true if successful, else false
 bool unload(void)
 {
+    // Iterate through buckets
     for (int i = 0; i < N; i++)
     {
+        // Set cursor to this each bucket location
         node *cursor = table[i];
-
+// If cursor is not NULL, free
         while (cursor)
         {
+            // Create temp
             node *tmp = cursor;
+            // Move cursor to next node
             cursor = cursor->next;
+            // Free up temp
             free(tmp);
         }
-
-        if (cursor == NULL && i == N - 1)
+// If cursor is NULL
+        if (i == N - 1 && cursor == NULL)
         {
             return true;
         }
