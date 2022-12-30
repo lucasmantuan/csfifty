@@ -20,11 +20,11 @@ node;
 // Number of buckets in hash table
 const unsigned int N = 26;
 
-// Hash table
-node *table[26];
-
 unsigned int word_count;
 unsigned int hash_value;
+
+// Hash table
+node *table[N];
 
 // Returns true if word is in dictionary, else false
 bool check(const char *word)
@@ -104,23 +104,18 @@ unsigned int size(void)
 // Unloads dictionary from memory, returning true if successful, else false
 bool unload(void)
 {
-    // Iterate through buckets
     for (int i = 0; i < N; i++)
     {
-        // Set cursor to this each bucket location
         node *cursor = table[i];
-// If cursor is not NULL, free
+
         while (cursor)
         {
-            // Create temp
             node *tmp = cursor;
-            // Move cursor to next node
             cursor = cursor->next;
-            // Free up temp
             free(tmp);
         }
-// If cursor is NULL
-        if (i == N - 1 && cursor == NULL)
+
+        if (cursor == NULL && i == N - 1)
         {
             return true;
         }
