@@ -24,7 +24,7 @@ unsigned int word_count;
 unsigned int hash_value;
 
 // Hash table
-node *table[N];
+node *table[26];
 
 // Returns true if word is in dictionary, else false
 bool check(const char *word)
@@ -104,21 +104,14 @@ unsigned int size(void)
 // Unloads dictionary from memory, returning true if successful, else false
 bool unload(void)
 {
-    for (int i = 0; i < N; i++)
+    node *head = NULL;
+    node *cursor = head;
+    // freeing linked lists
+    while (cursor != NULL)
     {
-        node *cursor = table[i];
-
-        while (cursor)
-        {
-            node *tmp = cursor;
-            cursor = cursor->next;
-            free(tmp);
-        }
-
-        if (cursor == NULL && i == N - 1)
-        {
-            return true;
-        }
+        node *temp = cursor;
+        cursor = cursor->next;
+        free(temp);
     }
-    return false;
+    return true;
 }
