@@ -5,6 +5,7 @@
 #include <string.h>
 #include <stdlib.h>
 #include <stdio.h>
+#include <strings.h>
 
 #include "dictionary.h"
 
@@ -31,7 +32,15 @@ bool check(const char *word)
     hash_value = hash(word);
     node *cursor = table[hash_value];
 
-    
+    while (cursor != 0)
+    {
+        if (strcasecmp(word, cursor->word) == 0)
+        {
+            return true;
+        }
+        cursor = cursor->next;
+    }
+
     return false;
 }
 
