@@ -17,3 +17,19 @@ def luhnChecksum(card):
         checksum += sum(digitsOf(d * 2))
     return checksum % 10
 
+length = 0
+visa = card
+master = card
+amex = card
+
+length = len(str(card))
+
+while visa >= 10:
+    visa = int(visa / 10)
+
+while amex >= 10 ** 13:
+    amex = int(amex / 10 ** 13)
+
+while master >= 10 ** 14:
+    master = int(master / 10 ** 14)
+    
