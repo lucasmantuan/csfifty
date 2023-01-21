@@ -5,3 +5,7 @@ while True:
     if card > 0:
         break
 
+def luhnChecksum(card):
+    def digitsOf(n):
+        return [int(d) for d in str(n)]
+    
