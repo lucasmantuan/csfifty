@@ -1,4 +1,4 @@
-from cs50 impor get_string
+from cs50 import get_string
 
 text = get_string("Text: ")
 
