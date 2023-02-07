@@ -1,7 +1,7 @@
 from csv import reader, DictReader
 from sys import argv, exit
+
 def main():
-    # Handle command line arguments
     if len(argv) != 3:
         print("Usage: python dna.py data.csv sequence.txt")
         exit(1)
