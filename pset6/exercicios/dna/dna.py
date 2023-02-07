@@ -5,36 +5,34 @@ def main():
     if len(argv) != 3:
         print("Usage: python dna.py data.csv sequence.txt")
         exit(1)
+
     db_path = argv[1]
     seq_path = argv[2]
 
-    # Open csv file and convert to dict
-    with open(db_path, "r") as csvfile:
-        reader = DictReader(csvfile)
+    with open(db_path, "r") as csv_file:
+        reader = DictReader(csv_file)
         dict_list = list(reader)
-    # Open sequences file and convert to list
+
     with open(seq_path, "r") as file:
         sequence = file.read()
 
-    # For each STR, compute longest run of consecutive repeats in      sequence
     max_counts = []
     for i in range(1, len(reader.fieldnames)):
-        STR = reader.fieldnames[i]
+        str = reader.fieldnames[i]
         max_counts.append(0)
-    # Loop through sequence to find STR
-        for j in range(len(sequence)):
-            STR_count = 0
-            # If match found, start counting repeats
-            if sequence[j:(j + len(STR))] == STR:
-                k = 0
-                while sequence[(j + k):(j + k + len(STR))] == STR:
-                    STR_count += 1
-                    k += len(STR)
-                # If new maximum of repeats, update max_counts
-                if STR_count > max_counts[i - 1]:
-                    max_counts[i - 1] = STR_count
 
-    # Compare against data
+        for j in range(len(sequence)):
+            str_count = 0
+
+            if sequence[j:(j + len(str))] == str:
+                k = 0
+                while sequence[(j + k):(j + k + len(str))] == str:
+                    str_count += 1
+                    k += len(str)
+
+                if str_count > max_counts[i - 1]:
+                    max_counts[i - 1] = str_count
+
     for i in range(len(dict_list)):
         matches = 0
         for j in range(1, len(reader.fieldnames)):
