@@ -2,6 +2,10 @@ import csv
 
 titles = {}
 
+def f(title):
+    return titles[title]
+
+
 with open('CS50 2019 - Lecture 7 - Favorite TV Shows (Responses).csv', 'r') as file:
     reader = csv.DictReader(file)
 
@@ -11,5 +15,5 @@ with open('CS50 2019 - Lecture 7 - Favorite TV Shows (Responses).csv', 'r') as f
             titles[title] = 0
             titles[title] += 1
 
-    for title in sorted(titles):
+    for title in sorted(titles, key=f, reverse=True):
         print(title, titles[title])
