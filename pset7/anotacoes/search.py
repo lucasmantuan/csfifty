@@ -7,4 +7,7 @@ with open('CS50 2019 - Lecture 7 - Favorite TV Shows (Responses).csv', 'r') as f
 
     counter = 0
     for row in reader:
-        if row['title']
+        if row['title'].strip().upper() == title:
+            counter += 1
+
+print(counter)
