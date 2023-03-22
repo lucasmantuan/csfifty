@@ -1,1 +1,1 @@
-SELECT name, energy FROM songs ORDER BY energy;
+SELECT name FROM songs ORDER BY tempo;
