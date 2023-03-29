@@ -1,4 +1,4 @@
-SELECT * FROM songs
+SELECT songs.name FROM songs
 INNER JOIN artists
 ON artists.id = songs.artist_id
-WHERE artists.id = 'Post Malone';
+WHERE artists.name = 'Post Malone';
