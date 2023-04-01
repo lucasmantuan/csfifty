@@ -2,6 +2,7 @@
 -- Sua consulta deve gerar uma tabela com duas colunas, uma para o título de cada filme e outra para a classificação de cada filme.
 -- Filmes sem classificação não devem ser incluídos no resultado.
 
-SELECT movies.title, ratings.rating FROM movies INNER JOIN ratings
+SELECT movies.title, ratings.rating FROM movies
+INNER JOIN ratings
 ON movies.id = ratings.movie_id
 WHERE movies.year = 2010;
