@@ -3,4 +3,5 @@
 -- Você pode presumir que o título de todos os filmes de Harry Potter começará com aspalavras “Harry Potter” e que se o título de um filme começar com as palavras “Harry Potter”, é um filme de Harry Potter.
 
 SELECT title, year FROM movies
-WHERE title LIKE '%Harry Potter%';
+WHERE title LIKE '%Harry Potter%'
+ORDER BY year;
