@@ -3,7 +3,7 @@
 -- Você pode presumir que há apenas um filme no banco de dados com o título Toy Story.
 
 SELECT people.name, movies.title FROM movies
-INNER JOIN ratings
+INNER JOIN people
 ON movies.id = ratings.movie_id
 WHERE movies.year = 2010
 ORDER BY ratings.rating DESC, movies.title ASC;
