@@ -2,8 +2,5 @@
 -- Sua consulta deve gerar uma tabela com duas colunas, uma para o título de cada filme e outra para a classificação de cada filme.
 -- Filmes sem classificação não devem ser incluídos no resultado.
 
-SELECT AVG(rating) FROM ratings
-WHERE movie_id IN (
-    SELECT id FROM movies
-    WHERE year = 2010
-);
+SELECT movies.title, ratings.rating FROM movies INNER JOIN ratings
+ON movies.year = 2010;
