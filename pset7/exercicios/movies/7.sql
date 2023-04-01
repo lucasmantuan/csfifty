@@ -3,4 +3,5 @@
 -- Filmes sem classificação não devem ser incluídos no resultado.
 
 SELECT movies.title, ratings.rating FROM movies INNER JOIN ratings
-ON ;
+ON movies.id = ratings.movie_id
+WHERE movies.year = 2010;
