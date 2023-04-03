@@ -3,7 +3,7 @@
 -- Você pode presumir que há apenas uma pessoa no banco de dados com o nome Johnny Depp.
 -- Você pode presumir que há apenas uma pessoa no banco de dados com o nome Helena Bonham Carter.
 
-SELECT people.name, movies.title FROM movies
+SELECT movies.title FROM movies
 INNER JOIN stars ON stars.movie_id = movies.id
 INNER JOIN people ON stars.person_id = people.id
 WHERE people.name = 'Johnny Depp'
