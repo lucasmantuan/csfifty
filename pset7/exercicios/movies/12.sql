@@ -9,4 +9,4 @@ INNER JOIN people ON stars.person_id = people.id
 WHERE people.name = 'Johnny Depp'
 OR people.name = 'Helena Bonham Carter'
 GROUP BY movies.title
-HAVING COUNT(*) > 1;;
+HAVING COUNT(*) > 1;
