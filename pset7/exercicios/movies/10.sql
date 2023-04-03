@@ -4,4 +4,4 @@
 
 SELECT people.name FROM people
 INNER JOIN directors ON directors.person_id = people.id;
--- INNER JOIN movies ON movies.id = stars.movie_id;
+INNER JOIN movies ON movies.id = stars.movie_id;
