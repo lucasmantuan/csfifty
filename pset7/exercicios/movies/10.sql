@@ -2,10 +2,8 @@
 -- Sua consulta deve gerar uma tabela com uma única coluna para o nome de cada pessoa.
 -- Se uma pessoa dirigiu mais de um filme que recebeu uma classificação de pelo menos 9,0, eles só devem aparecer em seus resultados uma vez.
 
-SELECT people.name FROM people
-INNER JOIN directors ON directors.person_id = people.id;
-
-INNER JOIN movies ON movies.id
-SELECT movies.title, ratings.rating FROM movies
+SELECT DISTINCT people.name FROM people
+INNER JOIN directors ON directors.person_id = people.id
+INNER JOIN movies ON directors.movie_id = movies.id
 INNER JOIN ratings ON ratings.movie_id = movies.id
 WHERE ratings.rating >= 9;
