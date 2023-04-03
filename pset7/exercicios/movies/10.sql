@@ -3,7 +3,5 @@ Sua consulta deve gerar uma tabela com uma única coluna para o nome de cada pes
 Se uma pessoa dirigiu mais de um filme que recebeu uma classificação de pelo menos 9,0, eles só devem aparecer em seus resultados uma vez.
 
 SELECT DISTINCT people.name FROM people
-INNER JOIN stars ON people.id = stars.person_id
+INNER JOIN directors ON directors.person_id = people.id
 INNER JOIN movies ON movies.id = stars.movie_id
-WHERE movies.year = 2004
-ORDER BY people.birth;
