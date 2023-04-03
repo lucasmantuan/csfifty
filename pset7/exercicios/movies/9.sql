@@ -4,7 +4,8 @@
 -- Não precisa se preocupar com pessoas que não têm ano de nascimento listado, desde que aqueles que têm ano de nascimento estejam listados em ordem.
 -- Se uma pessoa apareceu em mais de um filme em 2004, ela só deve aparecer uma vez nos resultados.
 
-SELECT people.name FROM people
+SELECT DISTINCT people.name FROM people
 INNER JOIN stars ON people.id = stars.person_id
 INNER JOIN movies ON movies.id = stars.movie_id
-WHERE movies.title = 'Toy Story';
+WHERE movies.year = 2004
+ORDER BY people.birth;
