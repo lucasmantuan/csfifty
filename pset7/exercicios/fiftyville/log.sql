@@ -89,7 +89,9 @@ AND atm_transactions.day = 28
 AND atm_transactions.atm_location = 'Fifer Street'
 AND atm_transactions.transaction_type = 'withdraw')
 AND name IN
-(JOIN courthouse_security_logs ON courthouse_security_logs.license_plate = people.license_plate
+(SELECT people.name
+FROM people
+JOIN courthouse_security_logs ON courthouse_security_logs.license_plate = people.license_plate
 WHERE courthouse_security_logs.month = 7
 AND courthouse_security_logs.day = 28
 AND courthouse_security_logs.hour = 10
