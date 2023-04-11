@@ -25,5 +25,5 @@ JOIN bank_accounts ON bank_accounts.person_id = people.id
 JOIN atm_transactions ON atm_transactions.account_number = bank_accounts.account_number
 WHERE atm_transactions.month = 7
 AND atm_transactions.day = 28
-AND atm_location = 'Fifer Street'
+AND atm_transactions.atm_location = 'Fifer Street'
 AND atm_transactions.transaction_type = 'withdrawing';
