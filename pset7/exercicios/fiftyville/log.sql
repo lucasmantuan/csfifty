@@ -27,3 +27,7 @@ WHERE atm_transactions.month = 7
 AND atm_transactions.day = 28
 AND atm_transactions.atm_location = 'Fifer Street'
 AND atm_transactions.transaction_type = 'withdraw';
+
+SELECT caller, receiver
+FROM phone_calls
+WHERE month = 7 AND day = 28 AND duration < 60;
