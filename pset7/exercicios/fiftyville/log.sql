@@ -8,3 +8,7 @@ AND street = 'Chamberlin Street';
 SELECT *
 FROM courthouse_security_logs
 WHERE hour = 10 AND minute = 15;
+
+SELECT *
+FROM people
+WHERE license_plate = '11J91FW';
