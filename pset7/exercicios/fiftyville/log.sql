@@ -76,6 +76,14 @@ FROM people
 JOIN passengers ON people.passport_number = passengers.passport_number
 JOIN flights ON flights.id = passengers.flight_id
 WHERE (flights.month = 7 AND flights.day = 29 AND flights.id = 36)
-AND name IN (SELECT phone_calls.caller_name
+AND name IN (SELECT people.name
 FROM phone_calls
 WHERE month = 7 AND day = 28 AND duration < 60)
+AND name IN (SELECT people.name, atm_transactions.transaction_type
+FROM people
+JOIN bank_accounts ON bank_accounts.person_id = people.id
+JOIN atm_transactions ON atm_transactions.account_number = bank_accounts.account_number
+WHERE atm_transactions.month = 7
+AND atm_transactions.day = 28
+AND atm_transactions.atm_location = 'Fifer Street'
+AND atm_transactions.transaction_type = 'withdraw';);
