@@ -7,4 +7,4 @@
 
 SELECT *
 FROM courthouse_security_logs
-WHERE month = 7 AND day = 
+WHERE hour = 10 AND minute = 15;
