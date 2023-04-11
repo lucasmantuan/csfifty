@@ -74,9 +74,9 @@ ORDER BY flights.hour ASC;
 SELECT name FROM people
 JOIN passengers ON people.passport_number = passengers.passport_number
 JOIN flights ON flights.id = passengers.flight_id
-WHERE (flights.year = 2020 AND flights.month = 7 AND flights.day = 29 AND flights.id = 36)
+WHERE (flights.month = 7 AND flights.day = 29 AND flights.id = 36)
 AND name IN
-(SELECT people.name
+(SELECT phone_calls.caller_name
 FROM phone_calls
 WHERE month = 7 AND day = 28 AND duration < 60)
 AND name IN
