@@ -28,7 +28,7 @@ AND atm_transactions.day = 28
 AND atm_transactions.atm_location = 'Fifer Street'
 AND atm_transactions.transaction_type = 'withdraw';
 
-SELECT caller, receiver
+SELECT caller, caller_name, receiver, receiver_name
 FROM phone_calls
 WHERE month = 7 AND day = 28 AND duration < 60;
 
@@ -37,3 +37,7 @@ WHERE month = 7 AND day = 28 AND duration < 60;
 
 -- ALTER TABLE phone_calls
 -- ADD receiver_name text;
+
+UPDATE phone_calls
+SET receiver_name = people.name
+FROM people
