@@ -31,3 +31,9 @@ AND atm_transactions.transaction_type = 'withdraw';
 SELECT caller, receiver
 FROM phone_calls
 WHERE month = 7 AND day = 28 AND duration < 60;
+
+-- ALTER TABLE phone_calls
+-- ADD caller_name text;
+
+-- ALTER TABLE phone_calls
+-- ADD receiver_name text;
