@@ -21,4 +21,8 @@ AND courthouse_security_logs.minute <= 25;
 
 SELECT people.name, atm_transactions.transaction_type
 FROM people
-JOIN B
+JOIN bank_accounts ON bank_accounts.person_id = people.id
+JOIN atm_transactions ON atm_transactions.account_number = bank_accounts.account_number
+WHERE atm_transactions.month = 7
+AND atm_transactions.day = 28
+AND atm_transactions
