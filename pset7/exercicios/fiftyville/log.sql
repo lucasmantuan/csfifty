@@ -18,3 +18,7 @@ AND courthouse_security_logs.day = 28
 AND courthouse_security_logs.hour = 10
 AND courthouse_security_logs.minute >= 15
 AND courthouse_security_logs.minute <= 25;
+
+SELECT people.name, atm_transactions.transaction_type
+FROM people
+JOIN B
