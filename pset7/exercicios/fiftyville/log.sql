@@ -47,3 +47,9 @@ WHERE month = 7 AND day = 28 AND duration < 60;
 -- SET receiver_name = people.name
 -- FROM people
 -- WHERE phone_calls.receiver = people.phone_number;
+
+SELECT id, hour, minute, origin_airport_id, destination_airport_id
+FROM flights
+WHERE month = 7 AND day = 29
+ORDER BY hour ASC
+LIMIT 1;
